@@ -86,18 +86,9 @@ button:focus {
 }
 
 .textoMediano{
-    font-size: 30px;
-    text-align: justify;
-}
-
-@media screen and (max-width:792px){
-.textoMediano{
     font-size: 20px;
     text-align: justify;
 }
-}
-
-
 
 .tag{
     font-size: 0.75em;
@@ -145,12 +136,12 @@ button:focus {
 }
 
 .footer{
-    background-color: #f6f9fb;
+    background-color: #f5faf3;
     color: #41596b;
 }
 
 .marginFirstElement{
-    margin-top: 100px;
+    margin-top: 130px;
 }
 
 /********************/
@@ -208,7 +199,11 @@ button:focus {
     position: relative;
     width: 200px;
 }
-
+@media screen and (max-width:768px){
+.contenedorLogoAnimation{
+    width: 150px;
+}
+}
 
 .logoG{
     position: absolute;
@@ -256,8 +251,6 @@ button:focus {
 }
 
 .tituloIndex{
-    margin-bottom: 100px;
-    margin-top: 50px;
     z-index: 1;
     opacity: 1;
     transition: .4s;
@@ -274,15 +267,15 @@ button:focus {
     font-size: 20px;
 }
 
-.rotateDiv{
-    position: absolute;
-    transition: .4s;
-    bottom: -150%;
-    right: -10%;
-    z-index: 0;
+.indexImg{
+    width: 20em;
+    border-radius: 50%;
+    box-shadow: 0 0 5px #bbbbbb;
+    transition: .3s;
 }
-.rotateDiv img{
-    height: 40em;
+.indexImg:hover{
+    box-shadow: 0 0 10px #bbbbbb;
+    transition: .3s;
 }
 
 @media screen and (max-width:1000px){
@@ -294,23 +287,7 @@ button:focus {
 .tituloIndex p{
     font-size: 18px;
 }
-
-.rotateDiv{
-    bottom: -80%;
-    right: -10%;
 }
-    
-.rotateDiv img{
-    height: 30em;
-}
-}
-@media screen and (max-width:590px){
-.rotateDiv{
-    bottom: -80%;
-    right: -50%;
-}
-}
-
 /*****************/
 /* Página neutra */
 /*****************/
@@ -429,7 +406,7 @@ button:focus {
 
 .show-on-scroll {
   opacity: 0;
-  transition: transform 0.3s, opacity 1s 1s ease-out, box-shadow 0.3s;
+  transition: transform 0.3s, opacity .5s .5s ease-out, box-shadow 0.3s;
 }
 
 .is-show {
