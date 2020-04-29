@@ -9,8 +9,8 @@
 }
 
 html, body{
-    font-family: "OpenSans" !important;
-    color: #77d14a !important;
+    font-family: "Montserrat" !important;
+    color: #000000 !important;
     background-color: #ffffff !important;
     width: 100%;
     margin: 0px;
@@ -33,6 +33,7 @@ button:focus {
 
 .textoResaltado{
     color: #77d14a;
+    font-weight: 900;
 }
 
 .tamGrande{
@@ -165,7 +166,7 @@ button:focus {
     color: #000000;
 }
 .barraNavegacion .paginas a{
-    font-size: 1.6em;
+    font-size: 1.3em;
     text-decoration: none;
     position: relative;
     color: #000000;
@@ -206,7 +207,6 @@ button:focus {
 .contenedorLogoAnimation{
     position: relative;
     width: 200px;
-    margin-left: 1em !important;
 }
 
 
@@ -261,15 +261,18 @@ button:focus {
     z-index: 1;
     opacity: 1;
     transition: .4s;
+    padding-left: 10% !important;
+    padding-right: 10% !important;
 }
 
 .tituloIndex h1{
-    font-family: 'Montserrat';
-    text-align: center;
     font-size: 80px;
     font-weight: 900;
 }
-
+.tituloIndex p{
+    text-align: justify;
+    font-size: 20px;
+}
 
 .rotateDiv{
     position: absolute;
@@ -285,8 +288,11 @@ button:focus {
 @media screen and (max-width:1000px){
     
 .tituloIndex h1{
-    text-align: center;
+ 
     font-size: 55px;
+}
+.tituloIndex p{
+    font-size: 18px;
 }
 
 .rotateDiv{
