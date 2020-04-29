@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>VisualGear</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    
+    <link rel="StyleSheet" href="../estilo.css" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/692505fe91.js" crossorigin="anonymous"></script>
+    <script src="../js/includeHTMLfile.js"></script>
+    <script src="../js/show-on-scroll.js"></script> 
+    <script src="../js/nuestros-js.js"></script> 
+</head>
+    
+<body>
+	<div class="barraNavegacion" w3-include-html="../header.html"></div> 
+    <div class="container-fluid marginFirstElement">
+        <div class="row">
+            <div class="col-sm col-centered tituloPagina">
+                <h1>Audio Player</h1>
+            </div>
+        </div>
+        <div class="row mb-4">
+            <div class="col-sm col-centered">
+                <div class="d-flex justify-content-center flex-wrap">
+                    <div class="tag orange">
+                        <span>HTML</span>
+                    </div>
+                    <div class="tag yellow">
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="tag blue">
+                        <span>CSS</span>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+
+    <div class="container-fluid mt-5">
+        <div class="row rowOscuro">
+            <div class="col-lg mt-5">
+                <div class="row">                    
+                     <label for="tipoProyecto">Seleccionar audio</label>
+                        <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="AudioSelec" onchange="cargarAudio()">
+                            <option selected value="0">Ninguno</option>
+                            <option value="1">Audio 1</option>
+                            <option value="2">Audio 2</option>
+                            <option value="3">Audio 3</option>
+                        </select>
+                </div>
+                <div class="row">
+                    <div class="col-md contenedorAudio">
+                        <audio id="audio" controls autoplay>
+                            <source id="source" src="" type="audio/mpeg">
+                        </audio>
+                    </div>       
+                </div>
+                <div class="row">
+                    <div class="col-lg mb-5">
+                        <div class="parrafo1 textoMediano">
+                            <span class="textoResaltado">Audio player</span> es un reproductor web de audio simple. Implementado con HTML y Javascript puede elegir el audio que desee y reproducirlo.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+	<div w3-include-html="../footer.html"></div>
+    
+    
+    <script>
+	includeHTML();
+	</script> 
+</body>
+</html>
