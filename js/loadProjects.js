@@ -11,14 +11,14 @@ let proyectos = [
     "imgSource": "media/images/proyectoAnimacion.png"
     },
     {
-    "projectName": "Portfolio",
+    "projectName": "Simulación de mallas deformables",
     "active": true,
-    "briefDescription": "Desarrollo de portfolio personal.",
-    "tags": ["HTML5", "JavaScript", "CSS5", "Bootstrap 4"],
-    "tagsColor": ["orange", "yellow", "blue", "violet"],
-    "date": "4/06/1965",
-    "siteSource": "proyectos/proyectoAudio.html",
-    "imgSource": "media/images/proyectoAudio.jpg"
+    "briefDescription": "Implementación de estructuras 2D y 1D para la simulación de diferentes materiales.",
+    "tags": ["Processing", "Universidad"],
+    "tagsColor": ["violet", "blue"],
+    "date": "04/2020",
+    "siteSource": "proyectos/proyectoMallasDeformables.html",
+    "imgSource": "media/images/proyectoMallasDeformables.gif"
     },
     {
     "projectName": "Colisión de particulas",
@@ -37,6 +37,26 @@ let proyectos = [
     "tags": [ "Processing", "Universidad"],
     "tagsColor": ["violet", "blue"],
     "date": "03/2020",
+    "siteSource": "proyectos/proyectoFireworks.html",
+    "imgSource": "media/images/fireworks.gif"
+    },
+    {
+    "projectName": "Integradores numéricos en simulación",
+    "active": true,
+    "briefDescription": "aaa.",
+    "tags": [ "Processing", "Excel", "Universidad"],
+    "tagsColor": ["violet", "green", "blue"],
+    "date": "03/2020",
+    "siteSource": "proyectos/proyectoFireworks.html",
+    "imgSource": "media/images/fireworks.gif"
+    },
+    {
+    "projectName": "Sólido rígido",
+    "active": true,
+    "briefDescription": "aaa.",
+    "tags": [ "Processing", "Universidad"],
+    "tagsColor": ["violet", "blue"],
+    "date": "05/2020",
     "siteSource": "proyectos/proyectoFireworks.html",
     "imgSource": "media/images/fireworks.gif"
     }
@@ -60,9 +80,9 @@ function loadProjects() {
                         + '<div class="centroContenedor1 d-flex justify-content-center align-items-center">'
                             + '<h2>' + proyectos[i].projectName + '</h2>'
                         + '</div>'
-                        + '<div class="contenedor1UnderBottom d-flex justify-content-center align-items-center">';
+                        + '<div class="contenedor1UnderBottom d-flex flex-wrap justify-content-center align-items-center">';
                             for(j = 0; j < proyectos[i].tags.length; j++){
-                                str += '<div class="tag '+proyectos[i].tagsColor[j]+'"> <span>' + proyectos[i].tags[j] + '</span></div>';
+                                str += '<div class="tag mt-2 '+proyectos[i].tagsColor[j]+'"> <span>' + proyectos[i].tags[j] + '</span></div>';
                             }
                     str += '</div>'
                     + '</div>'

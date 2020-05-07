@@ -48,36 +48,13 @@
     <div class="container-fluid mt-5">
         <div class="row rowOscuro pt-5 pb-5">
             <div class="col-lg-6 mt-5">
-                <div class="row contenedorVideo">
-                    <video onclick="playPauseVideo(this)" class="videoProyecto" id="0_video" name="video">
-                        <source src="../media/videos/proyectoAnimacion.mp4" type="video/mp4">
-                    </video>
-                    <div class="progress bloqueProgreso mb-1">
-                      <div id="0_barraProgreso" class="progress-bar barraProgreso" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                </div> 
-                <div class="row">
-                    <div class="col-auto mr-auto d-flex flex-row">
-                        <div>
-                            <button onclick="playPauseVideo(this)" class="control" id="0_controlVideo"><i id="0_playPauseIcon" class="fas fa-play-circle"></i></button>
-                            <button onclick="stopVideo(this)" class="control" id="0_controlVideo"><i class="fas fa-stop-circle"></i></button>
-                            <button onclick="goBackward(this)" class="control" id="0_controlVideo"><i class="fas fa-backward"></i></button>
-                            <button onclick="goForward(this)" class="control" id="0_controlVideo"><i class="fas fa-forward"></i></button>
-                        </div>
-                        <div class="bloqueVolumen">
-                            <button onclick="muteVolume(this)" class="control" id="0_controlVideo"><i id="0_volumeIcon"class="fas fa-volume-up"></i></button>
-                            <input id="0_volumeSlider" oninput="changeVolume(this)" onchange="changeVolume(this)" class="volumen" type="range" name="volumen" min="0" max="100">
-                        </div>
-                    </div>
-                    <div class="col-auto">
-                        <span class="textControl" id="0_timeVideo"></span>
-                        <button onclick="maximize(this)" class="control" id="0_controlVideo"><i class="fas fa-expand"></i></button>
-                    </div>
+                <div class="row contenedorVideoYT">
+                    <iframe class="videoYT" src="https://www.youtube.com/embed/Iog6zmbNJN8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
             <div class="col-lg-6 mb-5 mt-5">
                 <div class="row rowOscuro">
-                    <div class="textoPequenyo ml-4 mr-4">
+                    <div class="textoMediano ml-4 mr-4">
                         Hemos desarrollado un <span class="textoResaltado">add-on para Blender</span> que permite al usuario generar trayectorias modificadas a partir de una trayectoria original.<br />
                         Una vez que el usuario ha introducido los keyframes de posición de su trayectoria original, puede elegir el método de interpolación ( <span class="textoResaltado">lineal, Hermite o Catmull-Rom y sus parámetros</span> ) y la frecuencia de inserción de los nuevos keyframes.<br />
                         Opcionalmente se puede añadir una oscilación aleatoria especificando su amplitud máxima.<br /><br />
