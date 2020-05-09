@@ -390,6 +390,12 @@ button:focus {
     transition: 0.3s;
 }
 
+@media screen and (max-width:500px){
+.contenedor1Above{
+    height: 100px;
+}
+}
+
 .contenedor1Above h2{
     color: #77d14a;
 }
@@ -404,6 +410,14 @@ button:focus {
     opacity: 1; 
     transition: 0.3s;
 }
+
+@media screen and (max-width:500px){
+.contenedor1:hover .contenedor1Above{
+    opacity: 0; 
+    transition: 0.3s;
+}
+}
+
 .contenedor1Under{ 
     z-index: 0;
     opacity: 1;
@@ -423,6 +437,13 @@ button:focus {
     transition: 0.3s;
 }
 
+@media screen and (max-width:500px){
+.contenedor1:hover .contenedor1Under img{ 
+    opacity: 1;
+    transition: 0.3s;
+}
+}
+
 .centroContenedor1{
     position: absolute;
     top: 0;
@@ -436,6 +457,13 @@ button:focus {
 .contenedor1:hover .centroContenedor1{
     opacity: 0;
     transition: 0.3s;
+}
+
+@media screen and (max-width:500px){
+.contenedor1:hover .centroContenedor1{
+    opacity: 1;
+    transition: 0.3s;
+}
 }
 
 .contenedor1UnderBottom{
