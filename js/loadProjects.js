@@ -31,13 +31,13 @@ let proyectos = [
     "imgSource": "media/images/collisions.gif"
     },
     {
-    "projectName": "Emisor de partículas - Fuegos artificiales",
+    "projectName": "Emisores de partículas",
     "active": true,
     "briefDescription": "Implementación de emisores de partículas con diferentes formas.",
     "tags": [ "Processing", "Universidad"],
     "tagsColor": ["violet", "blue"],
     "date": "03/2020",
-    "siteSource": "proyectos/proyectoFireworks.html",
+    "siteSource": "proyectos/proyectoEmisores.html",
     "imgSource": "media/images/fireworks.gif"
     },
     {
@@ -48,7 +48,7 @@ let proyectos = [
     "tagsColor": ["violet", "green", "blue"],
     "date": "03/2020",
     "siteSource": "proyectos/proyectoFireworks.html",
-    "imgSource": "media/images/fireworks.gif"
+    "imgSource": "media/images/solidoRigido.png"
     },
     {
     "projectName": "Sólido rígido",
@@ -58,7 +58,7 @@ let proyectos = [
     "tagsColor": ["violet", "blue"],
     "date": "05/2020",
     "siteSource": "proyectos/proyectoFireworks.html",
-    "imgSource": "media/images/fireworks.gif"
+    "imgSource": "media/images/solidoRigido.png"
     }
 ];
 
