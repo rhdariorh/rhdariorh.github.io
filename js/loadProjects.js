@@ -41,14 +41,23 @@ let proyectos = [
     "imgSource": "media/images/collisions.gif"
     },
     {
+<<<<<<< HEAD
     "projectName": "Integradores numéricos en simulación",
+=======
+    "projectName": "Emisores de partículas",
+>>>>>>> 0d78ca1b5beff6f14d8c06edd0734a2e7f7b388d
     "active": true,
     "briefDescription": "Implementación y análisis de diferentes métodos de integración utilizados en simulación.",
     "tags": [ "Processing", "Excel", "Universidad"],
     "tagsColor": ["violet", "green", "blue"],
     "date": "03/2020",
+<<<<<<< HEAD
     "siteSource": "proyectos/proyectoIntegradores.html",
     "imgSource": "media/images/integracion.png"
+=======
+    "siteSource": "proyectos/proyectoEmisores.html",
+    "imgSource": "media/images/fireworks.gif"
+>>>>>>> 0d78ca1b5beff6f14d8c06edd0734a2e7f7b388d
     },
     {
     "projectName": "Emisores de partículas",
@@ -57,8 +66,13 @@ let proyectos = [
     "tags": [ "Processing", "Universidad"],
     "tagsColor": ["violet", "blue"],
     "date": "03/2020",
+<<<<<<< HEAD
     "siteSource": "proyectos/proyectoEmisores.html",
     "imgSource": "media/images/fireworks.gif"
+=======
+    "siteSource": "proyectos/proyectoFireworks.html",
+    "imgSource": "media/images/solidoRigido.png"
+>>>>>>> 0d78ca1b5beff6f14d8c06edd0734a2e7f7b388d
     },
     {
     "projectName": "Sólido rígido",
@@ -67,6 +81,7 @@ let proyectos = [
     "tags": [ "Processing", "Universidad"],
     "tagsColor": ["violet", "blue"],
     "date": "05/2020",
+<<<<<<< HEAD
     "siteSource": "proyectos/proyectoSolidoRigido.html",
     "imgSource": "media/images/solRigido.png"
     },
@@ -79,6 +94,10 @@ let proyectos = [
     "date": "05/2020",
     "siteSource": "proyectos/proyectoSolidoRigido.html",
     "imgSource": "media/images/solRigido.png"
+=======
+    "siteSource": "proyectos/proyectoFireworks.html",
+    "imgSource": "media/images/solidoRigido.png"
+>>>>>>> 0d78ca1b5beff6f14d8c06edd0734a2e7f7b388d
     }
 ];
 
