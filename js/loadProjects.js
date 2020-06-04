@@ -21,6 +21,16 @@ let proyectos = [
     "imgSource": "media/images/proyectoMallasDeformables.gif"
     },
     {
+    "projectName": "Sistema Solar interactivo",
+    "active": true,
+    "briefDescription": "Sistema Solar web interactivo y educativo.",
+    "tags": ["Three.js", "Universidad"],
+    "tagsColor": ["pink", "blue"],
+    "date": "04/2020",
+    "siteSource": "proyectos/proyectoSistemaSolarThree.html",
+    "imgSource": "media/images/sistemaSolarThree.png"
+    },
+    {
     "projectName": "Colisión de particulas",
     "active": true,
     "briefDescription": "Simulación de colisiones a través diferentes métodos y estructuras de datos.",
@@ -31,34 +41,44 @@ let proyectos = [
     "imgSource": "media/images/collisions.gif"
     },
     {
-    "projectName": "Emisor de partículas - Fuegos artificiales",
+    "projectName": "Integradores numéricos en simulación",
+    "active": true,
+    "briefDescription": "Implementación y análisis de diferentes métodos de integración utilizados en simulación.",
+    "tags": [ "Processing", "Excel", "Universidad"],
+    "tagsColor": ["violet", "green", "blue"],
+    "date": "03/2020",
+    "siteSource": "proyectos/proyectoIntegradores.html",
+    "imgSource": "media/images/integracion.png"
+    },
+    {
+    "projectName": "Emisores de partículas",
     "active": true,
     "briefDescription": "Implementación de emisores de partículas con diferentes formas.",
     "tags": [ "Processing", "Universidad"],
     "tagsColor": ["violet", "blue"],
     "date": "03/2020",
-    "siteSource": "proyectos/proyectoFireworks.html",
-    "imgSource": "media/images/fireworks.gif"
-    },
-    {
-    "projectName": "Integradores numéricos en simulación",
-    "active": true,
-    "briefDescription": "aaa.",
-    "tags": [ "Processing", "Excel", "Universidad"],
-    "tagsColor": ["violet", "green", "blue"],
-    "date": "03/2020",
-    "siteSource": "proyectos/proyectoFireworks.html",
+    "siteSource": "proyectos/proyectoEmisores.html",
     "imgSource": "media/images/fireworks.gif"
     },
     {
     "projectName": "Sólido rígido",
     "active": true,
-    "briefDescription": "aaa.",
+    "briefDescription": "Cálculo de velocidad angular a partir de la velocidad lineal para la rotacion de una esfera sin deslizamiento.",
     "tags": [ "Processing", "Universidad"],
     "tagsColor": ["violet", "blue"],
     "date": "05/2020",
-    "siteSource": "proyectos/proyectoFireworks.html",
-    "imgSource": "media/images/fireworks.gif"
+    "siteSource": "proyectos/proyectoSolidoRigido.html",
+    "imgSource": "media/images/solRigido.png"
+    },
+    {
+    "projectName": "OpenGL, OSG y POV-Ray",
+    "active": true,
+    "briefDescription": "aaa.",
+    "tags": [ "OpenGL", "OSG", "POV-Ray", "Universidad"],
+    "tagsColor": ["lightBlue", "red", "green", "blue"],
+    "date": "05/2020",
+    "siteSource": "proyectos/proyectoSolidoRigido.html",
+    "imgSource": "media/images/solRigido.png"
     }
 ];
 
