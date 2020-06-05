@@ -149,6 +149,13 @@ button:focus {
     color: #41596b;
 }
 
+.footer a{
+    color: #41596b;
+}
+.footer a:hover{
+    color: #77d14a;
+}
+
 .marginFirstElement{
     margin-top: 130px;
 }
@@ -637,8 +644,9 @@ video{
 }
 
 .fab {
-    color: #1f8884;
-    padding: 0.5em;
+    /*color: #77d14a;*/
+    font-size: 150%;
+    padding: 0.2em;
 }
 
 .contenedor2{
