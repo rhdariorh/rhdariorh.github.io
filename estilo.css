@@ -110,6 +110,7 @@ button:focus {
     margin-right: 0.5em;
     padding-left: 0.6em;
     padding-right: 0.6em;
+    margin-bottom: 0.5em;
 }
 /* Tag colors */
 .blue{
