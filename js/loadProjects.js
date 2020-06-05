@@ -77,7 +77,7 @@ let proyectos = [
     "tags": [ "OpenGL", "GLSL", "OSG", "POV-Ray", "Universidad"],
     "tagsColor": ["lightBlue", "orange", "red", "green", "blue"],
     "date": "05/2020",
-    "siteSource": "proyectos/proyectoOpenGL.html",
+    "siteSource": "proyectos/proyectoEmpezando.html",
     "imgSource": "media/images/infGrafica.png"
     }
 ];
