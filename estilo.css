@@ -192,6 +192,11 @@ button:focus {
     height: 100%;
 }
 
+.lineaSeparadora{
+    background: grey;
+    width: 100%;
+    height: 1px;
+}
 /********************/
 /* Barra navegación */
 /********************/
@@ -613,7 +618,6 @@ video{
 .sobreMi{
     width: 20em;
     border-radius: .3em;
-    box-shadow: 0 0 5px #bbbbbb;
 }
 
 .sobreMiTop img{
@@ -624,7 +628,7 @@ video{
 }
 
 .tituloSobreMi{
-    color: #1f8884;
+    color: #77d14a;
     font-size: 1.5em;
 }
 
@@ -635,6 +639,18 @@ video{
 .fab {
     color: #1f8884;
     padding: 0.5em;
+}
+
+.contenedor2{
+    width: 100%;
+    overflow: hidden;
+    border-radius: .3em;
+    box-shadow: 0 0 5px #bbbbbb;
+}
+
+.contenedor2 .titulo{
+    color: white;
+    background-color: rgba(119, 209, 74, 1);
 }
 
 /************/

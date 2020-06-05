@@ -71,14 +71,14 @@ let proyectos = [
     "imgSource": "media/images/solRigido.png"
     },
     {
-    "projectName": "OpenGL, OSG y POV-Ray",
+    "projectName": "Empezando con la informática gráfica",
     "active": true,
-    "briefDescription": "aaa.",
-    "tags": [ "OpenGL", "OSG", "POV-Ray", "Universidad"],
-    "tagsColor": ["lightBlue", "red", "green", "blue"],
+    "briefDescription": "Varios pequeños proyectos, jugando con diferentes tecnologías.",
+    "tags": [ "OpenGL", "GLSL", "OSG", "POV-Ray", "Universidad"],
+    "tagsColor": ["lightBlue", "orange", "red", "green", "blue"],
     "date": "05/2020",
-    "siteSource": "proyectos/proyectoSolidoRigido.html",
-    "imgSource": "media/images/solRigido.png"
+    "siteSource": "proyectos/proyectoOpenGL.html",
+    "imgSource": "media/images/infGrafica.png"
     }
 ];
 
