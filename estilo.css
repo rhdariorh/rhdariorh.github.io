@@ -209,6 +209,163 @@ button:focus {
     width: 100%;
     height: 1px;
 }
+
+.show-on-scroll {
+  opacity: 0;
+  transition: transform 0.3s, opacity .5s .5s ease-out, box-shadow 0.3s;
+}
+
+.is-show {
+  opacity: 1;
+}
+
+/********************/
+/* Mis contenedores */
+/********************/
+
+/** Contenedor1 **/
+.contenedor1{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    background-color: #ffffff;
+    /*padding: 1em;*/
+    overflow: hidden;
+    border-radius: .3em;
+    margin-top: 1.5em;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+    border-top: .2em solid;
+    border-color: #77d14a;
+    box-shadow: 0 0 5px #bbbbbb;
+    min-height: 350px;
+    text-align: center;
+}
+
+.contenedor1:hover{
+    transform: translate(0px, -0.3em);
+    box-shadow: 0 0 15px #bbbbbb;
+}
+
+@media screen and (max-width:1000px){
+.contenedor1{
+    flex-direction: column;
+}
+}
+
+.contenedor1Above{
+    z-index: 1;
+    opacity: 0; 
+    position: relative;
+    width: 100%;
+    padding: 1em;
+    color: black;
+    transition: 0.3s;
+}
+
+@media screen and (max-width:500px){
+.contenedor1Above{
+    height: 100px;
+}
+}
+
+.contenedor1Above h2{
+    font-size: 25px;
+    color: #77d14a;
+}
+
+.contenedor1Above p{
+    text-align: justify;
+    color: black;
+    font-size: 20px;
+}
+
+.contenedor1:hover .contenedor1Above{
+    opacity: 1; 
+    transition: 0.3s;
+}
+
+@media screen and (max-width:500px){
+.contenedor1:hover .contenedor1Above{
+    opacity: 0; 
+    transition: 0.3s;
+}
+}
+
+.contenedor1Under{ 
+    z-index: 0;
+    opacity: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.contenedor1Under img{ 
+    min-width: 100%;
+    height: 100%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    transition: 0.3s;
+}
+
+.contenedor1:hover .contenedor1Under img{ 
+    opacity: 0.1;
+    transition: 0.3s;
+}
+
+@media screen and (max-width:500px){
+.contenedor1:hover .contenedor1Under img{ 
+    opacity: 1;
+    transition: 0.3s;
+}
+}
+
+.centroContenedor1{
+    position: absolute;
+    top: 0;
+    padding: 1em;
+    width: 100%;
+    height: 100%;
+    text-shadow: 0px 0px 8px #000000;
+    transition: 0.3s;
+}
+
+.centroContenedor1 h2{
+    font-size: 25px;
+    color: white;
+}
+
+.contenedor1:hover .centroContenedor1{
+    opacity: 0;
+    transition: 0.3s;
+}
+
+@media screen and (max-width:500px){
+.contenedor1:hover .centroContenedor1{
+    opacity: 1;
+    transition: 0.3s;
+}
+}
+
+.contenedor1UnderBottom{
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}
+
+/** Contenedor2 - Usado en "Sobre mi" **/
+.contenedor2{
+    width: 100%;
+    overflow: hidden;
+    border-radius: .3em;
+    box-shadow: 0 0 5px #bbbbbb;
+}
+
+.contenedor2 .titulo{
+    color: white;
+    background-color: rgba(119, 209, 74, 1);
+}
+
 /********************/
 /* Barra navegación */
 /********************/
@@ -376,138 +533,6 @@ button:focus {
 /***************************************/
 /* Lista de proyectos (proyectos.html) */
 /***************************************/
-.contenedor1{
-    display: flex;
-    position: relative;
-    flex-direction: row;
-    background-color: #ffffff;
-    /*padding: 1em;*/
-    overflow: hidden;
-    border-radius: .3em;
-    margin-top: 1.5em;
-    margin-right: 1.5em;
-    margin-left: 1.5em;
-    border-top: .2em solid;
-    border-color: #77d14a;
-    box-shadow: 0 0 5px #bbbbbb;
-    min-height: 350px;
-    text-align: center;
-}
-
-.contenedor1:hover{
-    transform: translate(0px, -0.3em);
-    box-shadow: 0 0 15px #bbbbbb;
-}
-
-@media screen and (max-width:1000px){
-.contenedor1{
-    flex-direction: column;
-}
-}
-
-.contenedor1Above{
-    z-index: 1;
-    opacity: 0; 
-    position: relative;
-    width: 100%;
-    padding: 1em;
-    color: black;
-    font-size: 20px;
-    transition: 0.3s;
-}
-
-@media screen and (max-width:500px){
-.contenedor1Above{
-    height: 100px;
-}
-}
-
-.contenedor1Above h2{
-    color: #77d14a;
-}
-
-.contenedor1Above p{
-    text-align: justify;
-    color: black;
-    font-size: 25px;
-}
-
-.contenedor1:hover .contenedor1Above{
-    opacity: 1; 
-    transition: 0.3s;
-}
-
-@media screen and (max-width:500px){
-.contenedor1:hover .contenedor1Above{
-    opacity: 0; 
-    transition: 0.3s;
-}
-}
-
-.contenedor1Under{ 
-    z-index: 0;
-    opacity: 1;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
-
-.contenedor1Under img{ 
-    min-width: 100%;
-    height: 100%;
-    margin-left: 50%;
-    transform: translateX(-50%);
-    transition: 0.3s;
-}
-
-.contenedor1:hover .contenedor1Under img{ 
-    opacity: 0.1;
-    transition: 0.3s;
-}
-
-@media screen and (max-width:500px){
-.contenedor1:hover .contenedor1Under img{ 
-    opacity: 1;
-    transition: 0.3s;
-}
-}
-
-.centroContenedor1{
-    position: absolute;
-    top: 0;
-    padding: 1em;
-    width: 100%;
-    height: 100%;
-    color: white;
-    text-shadow: 0px 0px 8px #000000;
-    transition: 0.3s;
-}
-.contenedor1:hover .centroContenedor1{
-    opacity: 0;
-    transition: 0.3s;
-}
-
-@media screen and (max-width:500px){
-.contenedor1:hover .centroContenedor1{
-    opacity: 1;
-    transition: 0.3s;
-}
-}
-
-.contenedor1UnderBottom{
-    position: absolute;
-    bottom: 10px;
-    width: 100%;
-}
-
-.show-on-scroll {
-  opacity: 0;
-  transition: transform 0.3s, opacity .5s .5s ease-out, box-shadow 0.3s;
-}
-
-.is-show {
-  opacity: 1;
-}
 
 
 /***********************/
@@ -654,17 +679,6 @@ video{
     padding: 0.2em;
 }
 
-.contenedor2{
-    width: 100%;
-    overflow: hidden;
-    border-radius: .3em;
-    box-shadow: 0 0 5px #bbbbbb;
-}
-
-.contenedor2 .titulo{
-    color: white;
-    background-color: rgba(119, 209, 74, 1);
-}
 
 /************/
 /* Contacto */

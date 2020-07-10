@@ -89,7 +89,7 @@ function loadProjects() {
     str = "";
     // loop through all elements in the array, building a form for each object
     for (i = 0; i < proyectos.length; i++ ) {
-        str += '<div class="col-xl-6 mb-5">'
+        str += '<div class="col-xl-3 mb-5">'
                 + '<a class="contenedor1 show-on-scroll "href="'+ proyectos[i].siteSource +'">'
                     + '<div class="contenedor1Above">'
                         + '<h2>' + proyectos[i].projectName + '</h2><p>'
