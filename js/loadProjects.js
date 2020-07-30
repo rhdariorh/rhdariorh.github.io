@@ -82,7 +82,42 @@ let proyectos = [
     }
 ];
 
+/* Tipo contenedor 3*/
 function loadProjects() {
+    var elem = document.getElementById('projects');
+    if(!elem) return;
+    var i, j;
+    str = "";
+    // loop through all elements in the array, building a form for each object
+    for (i = 0; i < proyectos.length; i++ ) {
+        
+        str +=
+            '<div class="row justify-content-around" style="width: 100%;">' +
+                '<div class="col-12">' +
+                    '<a class="contenedor3 show-on-scroll row" href="' + proyectos[i].siteSource +'">' +
+                        '<div class="contenedor3Img col-sm-3">' +
+                            '<img class="" src="'+ proyectos[i].imgSource +'" alt="Imagen del proyecto">' +
+                        '</div>' +
+                        '<div class="contenedor3Info col-sm-9">' +
+                            '<div class="contenedor3InfoTop">' +
+                                '<h2>' + proyectos[i].projectName + '</h2>' +
+                                '<p>'+ proyectos[i].briefDescription + '</p>' +
+                            '</div>' +
+                            '<div class="contenedor3InfoBottom d-flex flex-wrap justify-content-center align-items-center">';
+                            for(j = 0; j < proyectos[i].tags.length; j++){
+                                str += '<div class="tag mt-2 '+proyectos[i].tagsColor[j]+'"> <span>' + proyectos[i].tags[j] + '</span></div>';
+                            }
+                    str+=   '</div>' +
+                        '</div>' +
+                    '</a>' +
+                '</div>' +
+            '</div>';
+    };
+    elem.innerHTML = str;
+}
+
+/* Tipo contenedor 1*/
+/*function loadProjects() {
     var elem = document.getElementById('projects');
     if(!elem) return;
     var i, j;
@@ -108,13 +143,9 @@ function loadProjects() {
                     + '</div>'
                 + '</a>'
             + '</div>';
-    /*    for(j = 0; j < proyectos[i].tags.length; j++){
-            str += '<div class="tag '+proyectos[i].tagsColor[j]+'"> <span>' + proyectos[i].tags[j] + '</span></div>';
-        }*/
-        
     };
     elem.innerHTML = str;
-}
+} */
 
 //loadProjects();
 
