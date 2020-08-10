@@ -22,50 +22,52 @@
     
 <body>
 	<div class="barraNavegacion" w3-include-html="../header.html"></div> 
-    <div class="container-fluid marginFirstElement">
-        <div class="row">
-            <div class="col-sm col-centered tituloPagina">
-                <h1>Sistema Solar interactivo</h1>
-            </div>
-        </div>
-        <div class="row mb-4">
-            <div class="col-sm col-centered">
-                <div class="d-flex justify-content-center flex-wrap">
-                    <div class="tag lightBlue">
-                        <span>Three.js</span>
-                    </div>
-                    <div class="tag blue">
-                        <span>Universidad</span>
-                    </div>
-                </div>
-            </div>
-        </div> 
-    </div>
-
-    <div class="container-fluid mt-5">
-         <div class="row rowOscuro pt-5 pb-5">
-            <div class="col-lg-6 mt-5">
-                <div class="row contenedorVideoYT">
-                    <iframe class="videoYT" src="https://www.youtube.com/embed/rI_ZEoe393c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </div>
-            <div class="col-lg-6 mb-5 mt-5">
-                <div class="row rowOscuro">
-                    <div class="textoMediano ml-4 mr-4">
-                        Sistema Solar <span class="textoResaltado">web</span> interactivo y educativo. Pulsando los diferentes botones puedes desplazarte a lo largo del Sistema Solar y ver información sobre los planetas. El sistema tiene una escala que no corresponde con la realidad para hacerlo más manejable en distancias y poder observar todos los planetas de una manera más cómoda, lo mismo sucede con los tamaños de estos.<br /><br />Además, para darle una apariencia más estética y siguiendo la línea de no realismo, hemos puesto un libro debajo del sistema solar del mismo tamaño que todo el sistema para simular que el Sistema Solar ha aparecido al abrir el libro, un libro mágico donde aprender cómo es nuestro Sistema Solar.<br /><br />
-                    </div>
-                </div>
-                <div class="row rowOscuro">
-                    <div class="col-lg-12 d-flex justify-content-center align-items-center">
-                        <a href="https://mural.uv.es/roherda/ejercicios/pr6_7" target="_blank"><button type="button" class="btn btn-primary">Enlace al proyecto</button></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-	<div w3-include-html="../footer.html"></div>
     
+    <div class="bloque">
+        <div class="subbloque container-fluid marginFirstElement">
+            <div class="row">
+                <div class="col-sm col-centered tituloPagina">
+                    <h1>Sistema Solar interactivo</h1>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col-sm col-centered">
+                    <div class="d-flex justify-content-center flex-wrap">
+                        <div class="tag lightBlue">
+                            <span>Three.js</span>
+                        </div>
+                        <div class="tag blue">
+                            <span>Universidad</span>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+
+        <div class="subbloqueFill container-fluid mt-5">
+             <div class="row rowOscuro pt-5 pb-5">
+                <div class="col-lg-6 mt-5">
+                    <div class="row contenedorVideoYT">
+                        <iframe class="videoYT" src="https://www.youtube.com/embed/rI_ZEoe393c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-5 mt-5">
+                    <div class="row rowOscuro">
+                        <div class="textoMediano ml-4 mr-4">
+                            Sistema Solar <span class="textoResaltado">web</span> interactivo y educativo. Pulsando los diferentes botones puedes desplazarte a lo largo del Sistema Solar y ver información sobre los planetas. El sistema tiene una escala que no corresponde con la realidad para hacerlo más manejable en distancias y poder observar todos los planetas de una manera más cómoda, lo mismo sucede con los tamaños de estos.<br /><br />Además, para darle una apariencia más estética y siguiendo la línea de no realismo, hemos puesto un libro debajo del sistema solar del mismo tamaño que todo el sistema para simular que el Sistema Solar ha aparecido al abrir el libro, un libro mágico donde aprender cómo es nuestro Sistema Solar.<br /><br />
+                        </div>
+                    </div>
+                    <div class="row rowOscuro">
+                        <div class="col-lg-12 d-flex justify-content-center align-items-center">
+                            <a href="https://mural.uv.es/roherda/ejercicios/pr6_7" target="_blank"><button type="button" class="btn btn-primary">Enlace al proyecto</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div w3-include-html="../footer.html" class="subbloque footerContenedor"></div>
+    </div>
     
     <script>
 	includeHTML();

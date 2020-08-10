@@ -13,6 +13,7 @@ html, body{
     color: #000000 !important;
     background-color: #ffffff !important;
     width: 100%;
+    height: 100%;
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
@@ -154,6 +155,10 @@ button:focus {
     color: #41596b;
 }
 
+.footerContenedor{
+    width: 100%;
+}
+
 .footer a{
     color: #41596b;
 }
@@ -164,6 +169,7 @@ button:focus {
 .marginFirstElement{
     margin-top: 130px;
 }
+
 
 .myButton{
     color: black;
@@ -217,6 +223,21 @@ button:focus {
 
 .is-show {
   opacity: 1;
+}
+
+
+.bloque{
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+}
+
+.subbloque{
+    flex: 0 1 auto;
+}
+
+.subbloqueFill{
+    flex: 1 1 auto;
 }
 
 /********************/

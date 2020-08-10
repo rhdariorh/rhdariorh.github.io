@@ -22,46 +22,49 @@
     
 <body>
 	<div class="barraNavegacion" w3-include-html="../header.html"></div> 
-    <div class="container-fluid marginFirstElement">
-        <div class="row">
-            <div class="col-sm col-centered tituloPagina">
-                <h1>Colisión de partículas</h1>
+    
+    <div class="bloque">
+        <div class="subbloque container-fluid marginFirstElement">
+            <div class="row">
+                <div class="col-sm col-centered tituloPagina">
+                    <h1>Colisión de partículas</h1>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col-sm col-centered">
+                    <div class="d-flex justify-content-center flex-wrap">
+                        <div class="tag violet">
+                            <span>Processing</span>
+                        </div>
+                        <div class="tag blue">
+                            <span>Universidad</span>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+
+        <div class="subbloqueFill container-fluid mt-5">
+             <div class="row rowOscuro pt-5 pb-5">
+                <div class="col-lg-6 mt-5">
+                    <div class="row contenedorVideoYT">
+                        <iframe class="videoYT" src="https://www.youtube.com/embed/41rM8cL8fwg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-5 mt-5">
+                    <div class="row rowOscuro">
+                        <div class="textoMediano ml-4 mr-4">
+                           Haciendo uso de Processing, se ha desarrolado una pequeña aplicación que simula colisiones entre partículas con diferentes métodos y estructuras de datos.<br /><br />
+                             Las colisiones pueden calcularse mediante el método de colisión por <span class="textoResaltado">velocidades</span>, ideado para colisiones en gases, o con el método por <span class="textoResaltado">muelles</span>, el cual reacciona muy bien ante situaciones de acumulación de partículas por la gravedad.<br /><br />
+                            Además, también se ha experimentado y comparado el uso de diferentes estructuras de datos. Concretamente, la <span class="textoResaltado">fuerza bruta</span> (comparación de todos contra todos), estructuras <span class="textoResaltado">Grid</span> y tablas <span class="textoResaltado">Hash</span>. Estas dos últimas solo comparan colisiones con las partículas vecinas.
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="row mb-4">
-            <div class="col-sm col-centered">
-                <div class="d-flex justify-content-center flex-wrap">
-                    <div class="tag violet">
-                        <span>Processing</span>
-                    </div>
-                    <div class="tag blue">
-                        <span>Universidad</span>
-                    </div>
-                </div>
-            </div>
-        </div> 
-    </div>
 
-    <div class="container-fluid mt-5">
-         <div class="row rowOscuro pt-5 pb-5">
-            <div class="col-lg-6 mt-5">
-                <div class="row contenedorVideoYT">
-                    <iframe class="videoYT" src="https://www.youtube.com/embed/41rM8cL8fwg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </div>
-            <div class="col-lg-6 mb-5 mt-5">
-                <div class="row rowOscuro">
-                    <div class="textoMediano ml-4 mr-4">
-                       Haciendo uso de Processing, se ha desarrolado una pequeña aplicación que simula colisiones entre partículas con diferentes métodos y estructuras de datos.<br /><br />
-                         Las colisiones pueden calcularse mediante el método de colisión por <span class="textoResaltado">velocidades</span>, ideado para colisiones en gases, o con el método por <span class="textoResaltado">muelles</span>, el cual reacciona muy bien ante situaciones de acumulación de partículas por la gravedad.<br /><br />
-                        Además, también se ha experimentado y comparado el uso de diferentes estructuras de datos. Concretamente, la <span class="textoResaltado">fuerza bruta</span> (comparación de todos contra todos), estructuras <span class="textoResaltado">Grid</span> y tablas <span class="textoResaltado">Hash</span>. Estas dos últimas solo comparan colisiones con las partículas vecinas.
-                    </div>
-                </div>
-            </div>
-        </div>
+        <div w3-include-html="../footer.html" class="subbloque footerContenedor"></div>    
     </div>
-
-	<div w3-include-html="../footer.html"></div>
     
     
     <script>

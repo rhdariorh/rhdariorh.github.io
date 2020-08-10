@@ -21,60 +21,62 @@
 </head>
     
 <body>
-	<div class="barraNavegacion" w3-include-html="../header.html"></div> 
-    <div class="container-fluid marginFirstElement">
-        <div class="row">
-            <div class="col-sm col-centered tituloPagina">
-                <h1>Integradores numéricos en simulación</h1>
-            </div>
-        </div>
-        <div class="row mb-4">
-            <div class="col-sm col-centered">
-                <div class="d-flex justify-content-center flex-wrap">
-                    <div class="tag violet">
-                        <span>Processing</span>
-                    </div>
-                    <div class="tag green">
-                        <span>Excel</span>
-                    </div>
-                    <div class="tag blue">
-                        <span>Universidad</span>
-                    </div>
-                </div>
-            </div>
-        </div> 
-    </div>
-
-    <div class="container-fluid mt-5">
-         <div class="row rowOscuro pt-5 pb-5">
-            <div class="col-lg-6 mt-5">
-                <div class="row contenedorVideoYT">
-                    <iframe class="videoYT" src="https://www.youtube.com/embed/tyKhgF4lpBQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </div>
-            <div class="col-lg-6 mb-5 mt-5">
-                <div class="textoMediano ml-4 mr-4">
-                    Implementación y análisis de diferentes métodos de integración utilizados en simulación.<br /><br />
-                    Se ha expermimentado y comparado el comportamiento entre los métodos de <span class="textoResaltado">Euler explícito, </span><span class="textoResaltado">Euler semi-implicito, </span><span class="textoResaltado">Heun, </span><span class="textoResaltado">Runge-Kutta 2</span> y <span class="textoResaltado">Runge-Kutta 4</span>. Para ello se han preparado dos simulaciones gráficas con Processing (muelle bi-dimensional y tiro parabólico), se han monitorizado y analizado los valores de esta.
-                </div>
-            </div>
-        </div>
-        <div class="row rowOscuro pt-5 pb-2">
-            <div class="col-lg-8 mb-5">
-                <div class="textoMediano ml-4 mr-4">
-                    Además, se ha expermientado con diferentes escenarios simples que hacen uso de estos métodos de integración. En este último video se pueden observar los escenarios.
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="row contenedorVideoYT">
-                    <iframe class="videoYT" src="https://www.youtube.com/embed/kpNsQqh0SI8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </div>
-        </div>
-    </div>
-
-	<div w3-include-html="../footer.html"></div>
+	<div class="barraNavegacion" w3-include-html="../header.html"></div>
     
+    <div class="bloque">
+        <div class="subbloque container-fluid marginFirstElement">
+            <div class="row">
+                <div class="col-sm col-centered tituloPagina">
+                    <h1>Integradores numéricos en simulación</h1>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col-sm col-centered">
+                    <div class="d-flex justify-content-center flex-wrap">
+                        <div class="tag violet">
+                            <span>Processing</span>
+                        </div>
+                        <div class="tag green">
+                            <span>Excel</span>
+                        </div>
+                        <div class="tag blue">
+                            <span>Universidad</span>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+
+        <div class="subbloqueFill container-fluid mt-5">
+             <div class="row rowOscuro pt-5 pb-5">
+                <div class="col-lg-6 mt-5">
+                    <div class="row contenedorVideoYT">
+                        <iframe class="videoYT" src="https://www.youtube.com/embed/tyKhgF4lpBQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-5 mt-5">
+                    <div class="textoMediano ml-4 mr-4">
+                        Implementación y análisis de diferentes métodos de integración utilizados en simulación.<br /><br />
+                        Se ha expermimentado y comparado el comportamiento entre los métodos de <span class="textoResaltado">Euler explícito, </span><span class="textoResaltado">Euler semi-implicito, </span><span class="textoResaltado">Heun, </span><span class="textoResaltado">Runge-Kutta 2</span> y <span class="textoResaltado">Runge-Kutta 4</span>. Para ello se han preparado dos simulaciones gráficas con Processing (muelle bi-dimensional y tiro parabólico), se han monitorizado y analizado los valores de esta.
+                    </div>
+                </div>
+            </div>
+            <div class="row rowOscuro pt-5 pb-2">
+                <div class="col-lg-8 mb-5">
+                    <div class="textoMediano ml-4 mr-4">
+                        Además, se ha expermientado con diferentes escenarios simples que hacen uso de estos métodos de integración. En este último video se pueden observar los escenarios.
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="row contenedorVideoYT">
+                        <iframe class="videoYT" src="https://www.youtube.com/embed/kpNsQqh0SI8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div w3-include-html="../footer.html" class="subbloque footerContenedor"></div>
+    </div>
     
     <script>
 	includeHTML();

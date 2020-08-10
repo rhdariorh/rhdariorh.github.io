@@ -20,30 +20,37 @@
 </head>
 <body>
 	<div class="barraNavegacion" w3-include-html="header.html"></div> 
-    <div class="container-fluid marginFirstElement">
-        <div class="row contenedorTituloIndex">
-            <div class="col-sm tituloIndex mt-4">
-                <h1>Hola,</h1>
-                <p>Soy <b>Darío Rodríguez Hernández</b>, estudiante de Ingeniería Multimedia en la Universidad de Valencia.</p>
-                <p>Me apasiona lo que estudio, siempre estoy aprendiendo nuevas cosas por mi cuenta y enfrentándome a nuevos proyectos.</p>
-            </div>
-            <div class="col-lg d-flex justify-content-center align-items-center mt-5 mb-5 pl-4 pr-4">
-                <a href="/sobremi.html">
-                    <img src="media/images/dario.jpg" class="img-fluid indexImg" alt="Primer plano de la cara de Darío Rodríguez">
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid" style="margin-bottom: 100px;">
-        <div class="row rowOscuro">
-            <div class="col-lg d-flex justify-content-center align-items-center mb-5">
-                <a href="/sobremi.html" class="myButton">
-                     Más sobre mí
-                </a>
+    
+    <div class="bloque">
+    
+        <div class="subbloque marginFirstElement container-fluid">
+            <div class="row contenedorTituloIndex">
+                <div class="col-sm tituloIndex mt-4">
+                    <h1>Hola,</h1>
+                    <p>Soy <b>Darío Rodríguez Hernández</b>, estudiante de Ingeniería Multimedia en la Universidad de Valencia.</p>
+                    <p>Me apasiona lo que estudio, siempre estoy aprendiendo nuevas cosas por mi cuenta y enfrentándome a nuevos proyectos.</p>
+                </div>
+                <div class="col-lg d-flex justify-content-center align-items-center mt-5 mb-5 pl-4 pr-4">
+                    <a href="/sobremi.html">
+                        <img src="media/images/dario.jpg" class="img-fluid indexImg" alt="Primer plano de la cara de Darío Rodríguez">
+                    </a>
+                </div>
             </div>
         </div>
+
+        <div class="subbloqueFill container-fluid">
+            <div class="row rowOscuro">
+                <div class="col-lg d-flex justify-content-center align-items-center mb-5">
+                    <a href="/sobremi.html" class="myButton">
+                         Más sobre mí
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div w3-include-html="footer.html" class="subbloque footerContenedor"></div>
+        
     </div>
-	<div w3-include-html="footer.html" style="position:fixed; bottom: 0; width: 100%;"></div>
     
     
     <script>

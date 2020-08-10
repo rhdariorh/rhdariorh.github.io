@@ -21,75 +21,77 @@
 </head>
     
 <body>
-	<div class="barraNavegacion" w3-include-html="../header.html"></div> 
-    <div class="container-fluid marginFirstElement">
-        <div class="row">
-            <div class="col-sm col-centered tituloPagina">
-                <h1>Mallas deformables</h1>
-            </div>
-        </div>
-        <div class="row mb-4">
-            <div class="col-sm col-centered">
-                <div class="d-flex justify-content-center flex-wrap">
-                    <div class="tag violet">
-                        <span>Processing</span>
-                    </div>
-                    <div class="tag blue">
-                        <span>Universidad</span>
-                    </div>
-                </div>
-            </div>
-        </div> 
-    </div>
-
-    <div class="container-fluid mt-5">
-        
-         <!-- Fila 0 -->
-        <div class="row rowOscuro pt-5 pb-2">
-            <div class="col-lg-8 mb-5">
-                <div class="textoMediano ml-4 mr-4 pb-4">
-                    Se ha implementado una simulación gráfica de <span class="textoResaltado">mallas deformables</span>. Para ello se han creado varios nodos o <span class="textoResaltado">partículas unidas por muelles</span>. Variando las propiedades de estos muelles (constente elástica y amortiguación) se pueden obtener comportamiendo diferentes para conseguir simulaciones de diferentes materiales. <br />
-                    Con ello, hemos simulado algunos ejemplos como banderas y cortinas añadiendole fuerzas de viento, colchonetas elásticas, planchas de metal...<br />
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="row contenedorVideoYT">
-                    <iframe class="videoYT" src="https://www.youtube.com/embed/OWisr401wvE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Fila 1 -->
-        <div class="row rowOscuro pt-5 pb-2">
-            <div class="col-lg-8">
-                <div class="textoMediano ml-4 mr-4 pb-4">
-                    Además, también se han implementado <span class="textoResaltado">roturas en la malla</span> para darle un mayor realismo. Para ello, se puede especificar una <span class="textoResaltado">fuerza</span> o <span class="textoResaltado">longitud máxima</span> que puede soportar cada uno de los muelles. Cuando un muelle supera su límite de rotura deja de hacer efecto produciendo una rotura con muy buenos resultados.<br />
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="row contenedorVideoYT">
-                    <iframe class="videoYT" src="https://www.youtube.com/embed/6tzHqLFU6nY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </div>
-        </div>
-        
-         <!-- Fila 2 -->
-        <div class="row rowOscuro pt-5 pb-5 pb-2">
-            <div class="col-lg-8">
-                <div class="textoMediano ml-4 mr-4 pb-4">
-                    También se ha probado estructuras de una dimensión, utiles para otro tipo de simulaciones como puede ser <span class="textoResaltado">pelo</span> o cuerdas.
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="row contenedorVideoYT">
-                    <iframe class="videoYT" src="https://www.youtube.com/embed/DLKIVxfcQDE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </div>
-        </div>
-    </div>
-
-	<div w3-include-html="../footer.html"></div>
+	<div class="barraNavegacion" w3-include-html="../header.html"></div>
     
+    <div class="bloque">
+        <div class="subbloque container-fluid marginFirstElement">
+            <div class="row">
+                <div class="col-sm col-centered tituloPagina">
+                    <h1>Mallas deformables</h1>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col-sm col-centered">
+                    <div class="d-flex justify-content-center flex-wrap">
+                        <div class="tag violet">
+                            <span>Processing</span>
+                        </div>
+                        <div class="tag blue">
+                            <span>Universidad</span>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+
+        <div class="subbloqueFill container-fluid mt-5">
+
+             <!-- Fila 0 -->
+            <div class="row rowOscuro pt-5 pb-2">
+                <div class="col-lg-8 mb-5">
+                    <div class="textoMediano ml-4 mr-4 pb-4">
+                        Se ha implementado una simulación gráfica de <span class="textoResaltado">mallas deformables</span>. Para ello se han creado varios nodos o <span class="textoResaltado">partículas unidas por muelles</span>. Variando las propiedades de estos muelles (constente elástica y amortiguación) se pueden obtener comportamiendo diferentes para conseguir simulaciones de diferentes materiales. <br />
+                        Con ello, hemos simulado algunos ejemplos como banderas y cortinas añadiendole fuerzas de viento, colchonetas elásticas, planchas de metal...<br />
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="row contenedorVideoYT">
+                        <iframe class="videoYT" src="https://www.youtube.com/embed/OWisr401wvE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fila 1 -->
+            <div class="row rowOscuro pt-5 pb-2">
+                <div class="col-lg-8">
+                    <div class="textoMediano ml-4 mr-4 pb-4">
+                        Además, también se han implementado <span class="textoResaltado">roturas en la malla</span> para darle un mayor realismo. Para ello, se puede especificar una <span class="textoResaltado">fuerza</span> o <span class="textoResaltado">longitud máxima</span> que puede soportar cada uno de los muelles. Cuando un muelle supera su límite de rotura deja de hacer efecto produciendo una rotura con muy buenos resultados.<br />
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="row contenedorVideoYT">
+                        <iframe class="videoYT" src="https://www.youtube.com/embed/6tzHqLFU6nY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+             <!-- Fila 2 -->
+            <div class="row rowOscuro pt-5 pb-5 pb-2">
+                <div class="col-lg-8">
+                    <div class="textoMediano ml-4 mr-4 pb-4">
+                        También se ha probado estructuras de una dimensión, utiles para otro tipo de simulaciones como puede ser <span class="textoResaltado">pelo</span> o cuerdas.
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="row contenedorVideoYT">
+                        <iframe class="videoYT" src="https://www.youtube.com/embed/DLKIVxfcQDE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div w3-include-html="../footer.html" class="subbloque footerContenedor"></div>
+    </div>
     
     <script>
 	includeHTML();
