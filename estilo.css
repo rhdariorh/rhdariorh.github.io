@@ -11,7 +11,6 @@
 html, body{
     font-family: "Montserrat" !important;
     color: #000000 !important;
-    background-color: #ffffff !important;
     width: 100%;
     height: 100%;
     margin: 0px;
@@ -20,7 +19,7 @@ html, body{
 }
 
 ::selection {
-    background-color: #f5faf3;
+    background-color: #e6fade;
 }
 
 a{
@@ -57,7 +56,6 @@ button:focus {
 }
 
 .rowOscuro{
-    background-color: white;
     color: black;
     padding-left: 4%;
     padding-right: 4%;
@@ -73,7 +71,6 @@ button:focus {
 }
 
 .rowSubtitle{
-    background-color: white;
     color: black;
     padding-left: 4%;
     padding-right: 4%;
@@ -116,38 +113,48 @@ button:focus {
     padding-left: 0.6em;
     padding-right: 0.6em;
     margin-bottom: 0.5em;
+    
+    /*text-shadow: 5px 1px 10px #808080, 0px 5px 10px #999999, -5px 1px 10px #828282;*/
 }
 /* Tag colors */
 .blue{
     background-color: #0376f7;
+    /*text-shadow: 5px 1px 10px #0354f7, 0px 5px 10px #0376f7, -5px 1px 10px #197882;*/
 }
 
 .lightBlue{
     background-color: #5ac3da;
+    /*text-shadow: 5px 1px 10px #00a3c6, 0px 5px 10px #5ac3da, -5px 1px 10px #197882;*/
 }
 
 .green{
     background-color: #4ed55f;
+    /*text-shadow: 5px 1px 10px #77d14a, 0px 5px 10px #77d14a, -5px 1px 10px #197882;*/
 }
 
 .violet{
     background-color: #5752d0;
+    /*text-shadow: 5px 1px 10px #5d00b8, 0px 5px 10px #5f35b8, -5px 1px 10px #197882;*/
 }
 
 .pink{
     background-color: #f92d52;
+    /*text-shadow: 5px 1px 10px #5752d0, 0px 5px 10px #f92d52, -5px 1px 10px #f92d9c;*/
 }
 
 .red{
     background-color: #f93b2f;
+    /*text-shadow: 5px 1px 10px #5752d0, 0px 5px 10px #f93b2f, -5px 1px 10px #d55803;*/
 }
 
 .orange{
     background-color: #f99205;
+    /*text-shadow: 5px 1px 10px #fc7103, 0px 5px 10px #f99205, -5px 1px 10px #fc2803;*/
 }
 
 .yellow{
     background-color: #fcc803;
+    /*text-shadow: 5px 1px 10px #fc7103, 0px 5px 10px #fcc803, -5px 1px 10px #cfcf02;*/
 }
 
 .footer{
@@ -157,6 +164,7 @@ button:focus {
 
 .footerContenedor{
     width: 100%;
+    margin-top: 15px;
 }
 
 .footer a{
@@ -166,8 +174,14 @@ button:focus {
     color: #77d14a;
 }
 
-.marginFirstElement{
-    margin-top: 130px;
+.firstElement{
+    padding-top: 130px;
+}
+
+.firstElementColored{
+    padding-top: 130px;
+    
+        /*background: linear-gradient(180deg, rgba(255,255,255,.0), rgba(255,255,255,1) 98.0%),linear-gradient(210deg, rgb(119 209 74 / 70%), rgba(255,255,255,0.0) 90.00%),linear-gradient(90deg, rgb(76 103 202 / 83%), rgba(255,255,255,0.0) 90.00%);*/
 }
 
 
@@ -397,6 +411,7 @@ button:focus {
 
 .contenedor3{
     background-color: #ffffff;
+    
     /*padding: 1em;*/
     overflow: hidden;
     border-radius: .3em;
@@ -407,11 +422,20 @@ button:focus {
     border-color: #77d14a;
     box-shadow: 0 0 2px #bbbbbb;
    /* max-height: 150px; */
+    /*background-image: linear-gradient(to left top, #77d14a7d 0%, #00e7bd47 20%, #65efff36 35%, #cff2ff38 50%, #ffffff 60%);*/
+    background-blend-mode:multiply;
+    transition: 0.3s !important;
 }
 
 .contenedor3:hover{
-    transform: translate(0px, -0.05em);
-    box-shadow: 0 0 8px #bbbbbb;
+    transform: translate(0px, -0.3em);
+    box-shadow: 0 0 10px #bbbbbb;
+    /*box-shadow: 20px 5px 40px #77d14a94, 0px 5px 40px #00fffc87, -20px 5px 40px #2ac9db87;*/
+    /*box-shadow: 5px 1px 20px #77d14a94, 0px 5px 20px #00fffc87, -5px 1px 20px #2ac9db87;*/
+    
+    background-image: linear-gradient(#ffffff, #ffffff);
+    background-blend-mode:multiply;
+    transition: 0.3s !important;
 }
 
 .contenedor3Img{
