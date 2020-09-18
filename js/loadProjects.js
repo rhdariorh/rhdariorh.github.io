@@ -1,6 +1,16 @@
 // Tags color: blue, lightBlue, green, violet, pink, red, orange, yellow. 
 let proyectos = [
     {
+    "projectName": "Abstracción Core-profile OpenGL",
+    "active": true,
+    "briefDescription": "Implementación de una estructura básica que abstrae el uso de OpenGL Core-Profile para su uso más sencillo.",
+    "tags": [ "OpenGL", "C++", "GLSL"],
+    "tagsColor": ["lightBlue", "blue", "orange"],
+    "date": "11/2019",
+    "siteSource": "proyectos/proyectoLearningModernOpenGL.html",
+    "imgSource": "media/images/proyectoLearningModernOpenGL.png"
+    },
+    {
     "projectName": "Proyecto final de herramientas de animación",
     "active": true,
     "briefDescription": "Creación de un Add-on para la interpolación de trayectorias con oscilación y orientación con diferentes método de interpolación.",
