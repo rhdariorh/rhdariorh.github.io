@@ -40,6 +40,10 @@ button:focus {
     font-weight: 900;
 }
 
+.textoNegrita{
+    font-weight: bold;
+}
+
 .tamGrande{
     width: 40em;
     border-radius: .3em;
@@ -404,6 +408,32 @@ button:focus {
 .contenedor2 .titulo{
     color: white;
     background-color: rgba(119, 209, 74, 1);
+}
+
+/** Contenedor4 - Usado en "Sobre mi" **/
+.contenedor4{
+    width: 100%;
+    overflow: hidden;
+    border-radius: .3em;
+    /*box-shadow: 0 0 5px #bbbbbb;*/
+}
+
+.contenedor4 .titulo{
+    color: black;
+    font-weight: bold;
+    font-size: 1.5em;
+    /*background-color: rgba(119, 209, 74, 1);*/
+}
+
+.contenedor4 .subtitulo{
+    color: black;
+    font-weight: bold;
+    font-size: 1.1em;
+    /*background-color: rgba(119, 209, 74, 1);*/
+}
+
+.contenedor4 .secundario{
+    color: dimgrey;
 }
 
 
