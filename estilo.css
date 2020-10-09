@@ -258,6 +258,11 @@ button:focus {
     flex: 1 1 auto;
 }
 
+.iconMedium{
+    transition: 0.3s;
+    height: 30px;
+}
+
 /********************/
 /* Mis contenedores */
 /********************/
