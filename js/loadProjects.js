@@ -8,7 +8,7 @@ let proyectos = [
     "tagsColor": ["lightBlue", "blue", "orange"],
     "date": "11/2019",
     "siteSource": "proyectos/proyectoLearningModernOpenGL.html",
-    "imgSource": "media/images/proyectoLearningModernOpenGL.png"
+    "imgSource": "media/images/proyectoLearningModernOpenGL.jpg"
     },
     {
     "projectName": "Proyecto final de herramientas de animación",
@@ -18,7 +18,7 @@ let proyectos = [
     "tagsColor": ["yellow", "orange", "blue"],
     "date": "11/2019",
     "siteSource": "proyectos/proyectoAnimacion.html",
-    "imgSource": "media/images/proyectoAnimacion.png"
+    "imgSource": "media/images/proyectoAnimacion.jpg"
     },
     {
     "projectName": "Simulación de mallas deformables",
@@ -38,7 +38,7 @@ let proyectos = [
     "tagsColor": ["pink", "blue"],
     "date": "04/2020",
     "siteSource": "proyectos/proyectoSistemaSolarThree.html",
-    "imgSource": "media/images/sistemaSolarThree.png"
+    "imgSource": "media/images/sistemaSolarThree.jpg"
     },
     {
     "projectName": "Colisión de particulas",
@@ -58,7 +58,7 @@ let proyectos = [
     "tagsColor": ["violet", "green", "blue"],
     "date": "03/2020",
     "siteSource": "proyectos/proyectoIntegradores.html",
-    "imgSource": "media/images/integracion.png"
+    "imgSource": "media/images/integracion.jpg"
     },
     {
     "projectName": "Emisores de partículas",
@@ -78,7 +78,7 @@ let proyectos = [
     "tagsColor": ["violet", "blue"],
     "date": "05/2020",
     "siteSource": "proyectos/proyectoSolidoRigido.html",
-    "imgSource": "media/images/solRigido.png"
+    "imgSource": "media/images/solRigido.jpg"
     },
     {
     "projectName": "Empezando con la informática gráfica",
@@ -88,7 +88,7 @@ let proyectos = [
     "tagsColor": ["lightBlue", "orange", "red", "green", "blue"],
     "date": "05/2020",
     "siteSource": "proyectos/proyectoEmpezando.html",
-    "imgSource": "media/images/infGrafica.png"
+    "imgSource": "media/images/infGrafica.jpg"
     }
 ];
 
