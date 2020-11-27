@@ -28,7 +28,7 @@ let proyectos = [
     "tagsColor": ["violet", "blue"],
     "date": "04/2020",
     "siteSource": "proyectos/proyectoMallasDeformables.html",
-    "imgSource": "media/images/proyectoMallasDeformables.gif"
+    "imgSource": "media/images/proyectoMallasDeformables.webm"
     },
     {
     "projectName": "Sistema Solar interactivo",
@@ -48,7 +48,7 @@ let proyectos = [
     "tagsColor": ["violet", "blue"],
     "date": "04/2020",
     "siteSource": "proyectos/proyectoColision.html",
-    "imgSource": "media/images/collisions.gif"
+    "imgSource": "media/images/collisions.webm"
     },
     {
     "projectName": "Integradores numéricos en simulación",
@@ -68,7 +68,7 @@ let proyectos = [
     "tagsColor": ["violet", "blue"],
     "date": "03/2020",
     "siteSource": "proyectos/proyectoEmisores.html",
-    "imgSource": "media/images/fireworks.gif"
+    "imgSource": "media/images/fireworks.webm"
     },
     {
     "projectName": "Sólido rígido",
@@ -105,9 +105,16 @@ function loadProjects() {
             '<div class="row justify-content-around" style="width: 100%;">' +
                 '<div class="col-12">' +
                     '<a class="contenedor3 show-on-scroll row" href="' + proyectos[i].siteSource +'">' +
-                        '<div class="contenedor3Img col-sm-3">' +
-                            '<img class="" src="'+ proyectos[i].imgSource +'" alt="Imagen del proyecto">' +
-                        '</div>' +
+                        '<div class="contenedor3Img col-sm-3">';
+                            var ext = proyectos[i].imgSource.substr(proyectos[i].imgSource.lastIndexOf('.') + 1);
+                            if(ext == "webm" || ext == "mp4"){
+                                str += '<video autoplay loop muted playsinline src="'+proyectos[i].imgSource+'" alt="Miniatura del proyecto."></video>'
+                                
+                            }
+                            else{
+                                str += '<img class="" src="'+ proyectos[i].imgSource +'" alt="Imagen del proyecto">';   
+                            }
+                str += '</div>' +
                         '<div class="contenedor3Info col-sm-9">' +
                             '<div class="contenedor3InfoTop">' +
                                 '<h2>' + proyectos[i].projectName + '</h2>' +
