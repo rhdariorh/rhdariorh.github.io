@@ -3,7 +3,7 @@ let proyectos = [
     {
     "projectName": "Inteligencia artificial para Boids",
     "active": true,
-    "briefDescription": "Técnicas de inteligencia artificial para Boids: path planning, steering behaviors, flocking.",
+    "briefDescription": "Técnicas de inteligencia artificial para Boids: path planning (A*, Dijkstra, BFS...), steering behaviors, flocking.",
     "tags": [ "Processing", "Universidad"],
     "tagsColor": ["violet", "blue"],
     "date": "10/2020",
