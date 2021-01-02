@@ -432,7 +432,7 @@ button:focus {
 
 .contenedor4 .subtitulo{
     color: black;
-    font-weight: bold;
+    /*font-weight: bold;*/
     font-size: 1.1em;
     /*background-color: rgba(119, 209, 74, 1);*/
 }
