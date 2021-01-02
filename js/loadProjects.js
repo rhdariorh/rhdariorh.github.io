@@ -1,12 +1,22 @@
 // Tags color: blue, lightBlue, green, violet, pink, red, orange, yellow. 
 let proyectos = [
     {
+    "projectName": "Inteligencia artificial para Boids",
+    "active": true,
+    "briefDescription": "Técnicas de inteligencia artificial para Boids: path planning, steering behaviors, flocking.",
+    "tags": [ "Processing", "Universidad"],
+    "tagsColor": ["violet", "blue"],
+    "date": "10/2020",
+    "siteSource": "proyectos/proyectoIAdeBoids.html",
+    "imgSource": "media/images/proyectoIAdeBoids.mp4"
+    },
+	{
     "projectName": "Abstracción Core-profile OpenGL",
     "active": true,
     "briefDescription": "Implementación de una estructura básica que abstrae el uso de OpenGL Core-Profile para su uso más sencillo.",
     "tags": [ "OpenGL", "C++", "GLSL"],
     "tagsColor": ["lightBlue", "blue", "orange"],
-    "date": "11/2019",
+    "date": "08/2020",
     "siteSource": "proyectos/proyectoLearningModernOpenGL.html",
     "imgSource": "media/images/proyectoLearningModernOpenGL.jpg"
     },

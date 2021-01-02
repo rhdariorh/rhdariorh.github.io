@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inteligencia Artificial | Darío</title>
+    <meta name="description" content="Técnicas de inteligencia artificial para Boids: path planning, steering behaviors, flocking.">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    
+    <link rel="StyleSheet" href="../estilo.css" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/692505fe91.js" crossorigin="anonymous"></script>
+    <script src="../js/includeHTMLfile.js"></script>
+    <script src="../js/show-on-scroll.js"></script> 
+    <script src="../js/nuestros-js.js"></script> 
+</head>
+    
+<body>
+	<div class="barraNavegacion" w3-include-html="../header.html"></div>
+    
+    <div class="bloque">
+        <div class="subbloque container-fluid firstElement">
+            <div class="row">
+                <div class="col-sm col-centered tituloPagina">
+                    <h1>Inteligencia artificial para Boids</h1>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col-sm col-centered">
+                    <div class="d-flex justify-content-center flex-wrap">
+                        <div class="tag violet">
+                            <span>Processing</span>
+                        </div>
+                        <div class="tag blue">
+                            <span>Universidad</span>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+
+        <div class="subbloqueFill container-fluid mt-5">
+			<div class="row rowSubtitle pt-5">
+                <div class="col-lg-12">
+                    <h1>Steering Behaviors</h1>
+                </div>
+            </div>
+			<div class="row rowOscuro pt-2 pb-2">
+                <div class="col-lg-12 mb-5">
+                    <div class="textoMediano ml-2 mr-2 pb-2">
+                        Uso de fuerzas de <span class="textoResaltado">steering</span> para comportamientos de inteligencia artificial en boids y flocks.
+                        Se ha utilizado para representar diferentes entornos y situaciones como <span class="textoResaltado">Persue &amp; Evade</span> simulando una presa
+						escapando varios depredadores, <span class="textoResaltado">flocking</span> simulando un banco o manada sin rumbo fijo, 
+						<span class="textoResaltado">textos animados</span> y <span class="textoResaltado">seguimiento de rutas</span> o caminos.<br />
+                    </div>
+                </div>
+            </div>
+			<div class="row rowOscuro pb-2">
+                <div class="col-lg-6">
+                    <div class="row contenedorVideoYT m-1">
+                        <iframe class="videoYT" src="https://www.youtube.com/embed/YL_t3f6Mrpo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="row contenedorVideoYT m-1">
+                        <iframe class="videoYT" src="https://www.youtube.com/embed/X9MuhnTLrXw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+			<div class="row rowOscuro pb-2">
+                <div class="col-lg-6">
+                    <div class="row contenedorVideoYT m-1">
+                        <iframe class="videoYT" src="https://www.youtube.com/embed/56xQg_RWh8Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="row contenedorVideoYT m-1">
+                        <iframe class="videoYT" src="https://www.youtube.com/embed/rk83k98GncI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+			
+			<div class="row rowSubtitle pt-5">
+                <div class="col-lg-12">
+                    <h1>Path planning + Flocking</h1>
+                </div>
+            </div>
+			<div class="row rowOscuro pt-2 pb-2">
+                <div class="col-lg-12 mb-5">
+                    <div class="textoMediano ml-2 mr-2 pb-2">
+                        Planificación de <span class="textoResaltado">rutas</span> en entornos discretizados haciendo uso de los algoritmos 
+						de <span class="textoResaltado">A*</span>, <span class="textoResaltado">Dijkstra</span>, <span class="textoResaltado">Best-First-Search</span> 
+						y un algoritmo con <span class="textoResaltado">heurística personalizada</span>. Además se ha mezclado el cálculo de estas rutas 
+						con los <span class="textoResaltado">comportamientos de flocking</span>.<br />
+                    </div>
+                </div>
+            </div>
+			<div class="row rowOscuro pb-2">
+                <div class="col-lg-6">
+                    <div class="row contenedorVideoYT m-1">
+                        <iframe class="videoYT" src="https://www.youtube.com/embed/HfBgYssnMCk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="row contenedorVideoYT m-1">
+                        <iframe class="videoYT" src="https://www.youtube.com/embed/Q7oqY185-Tw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+			
+        </div>
+
+        <div w3-include-html="../footer.html" class="subbloque footerContenedor"></div>
+    </div>
+    
+    <script>
+	includeHTML();
+	</script> 
+</body>
+</html>
