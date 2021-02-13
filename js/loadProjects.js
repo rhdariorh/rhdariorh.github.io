@@ -61,6 +61,16 @@ let proyectos = [
     "imgSource": "media/images/sistemaSolarThree.jpg"
     },
     {
+    "projectName": "Simulación de olas con mapas de alturas",
+    "active": true,
+    "briefDescription": "Olas a partir de diferentes tipos de ondas mezcladas convenientemente.",
+    "tags": [ "Processing", "Universidad"],
+    "tagsColor": ["violet", "blue"],
+    "date": "5/2020",
+    "siteSource": "proyectos/proyectoOlas.html",
+    "imgSource": "media/images/olas.webm"
+    },
+    {
     "projectName": "Colisión de particulas",
     "active": true,
     "briefDescription": "Simulación de colisiones a través diferentes métodos y estructuras de datos.",
