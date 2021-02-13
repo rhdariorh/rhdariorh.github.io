@@ -1,7 +1,7 @@
 <!DOCTYPE html>	
 <html>	
 <head>	
-    <title>Mallas deformables | Darío</title>	
+    <title>Objetos deformables | Darío</title>	
     <meta name="description" content="Implementación de estructuras 2D y 1D para la simulación de diferentes materiales.">	
     <meta charset="utf-8">	
     <meta name="viewport" content="width=device-width, initial-scale=1">	
@@ -28,7 +28,7 @@
         <div class="subbloque container-fluid firstElement">	
             <div class="row">	
                 <div class="col-sm col-centered tituloPagina">	
-                    <h1>Mallas deformables</h1>	
+                    <h1>Objetos deformables</h1>	
                 </div>	
             </div>	
             <div class="row mb-4">	
@@ -46,11 +46,38 @@
         </div>	
 
         <div class="subbloqueFill container-fluid mt-5">	
-
-             <!-- Fila 0 -->	
-            <div class="row rowOscuro pt-5 pb-2">	
+            <!-- Fila 0 -->	
+            <div class="row rowSubtitle pt-5">
+                <div class="col-lg-12">
+                    <h1>Position Based Dynamics (2020/21)</h1>
+                </div>
+            </div>
+            <div class="row rowOscuro pt-2 pb-2">	
                 <div class="col-lg-8 mb-5">	
-                    <div class="textoMediano ml-4 mr-4 pb-4">	
+                    <div class="textoMediano ml-2 mr-2 pb-2">	
+                        Objectos 2D y 3D deformables mediante Position Based Dynamics a partir del 
+                        paper <a href="https://matthias-research.github.io/pages/publications/posBasedDyn.pdf" target="_blank">Position Based Dynamics 2007</a> 
+                        de Matthias Müller, Bruno Heidelberger, Marcus Hennix y John Ratcliff.<br/>
+                        Las restricciones para la estructura se han implementado mediante restricciones de distancia y para las restricciones <i>shear</i> y <i>bend</i> restricciones
+                        de <i>triangle bending</i>.
+                    </div>	
+                </div>	
+                <div class="col-lg-4">	
+                    <div class="row contenedorVideoYT">	
+                        <iframe class="videoYT" src="https://www.youtube.com/embed/jqeHQ8-cHUo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>	
+                    </div>	
+                </div>	
+            </div>	
+            
+             <!-- Fila 0 -->	
+            <div class="row rowSubtitle pt-5">
+                <div class="col-lg-12">
+                    <h1>Muelles (2019/20)</h1>
+                </div>
+            </div>
+            <div class="row rowOscuro pt-2 pb-2">	
+                <div class="col-lg-8 mb-5">	
+                    <div class="textoMediano ml-2 mr-2 pb-2">	
                         Se ha implementado una simulación gráfica de <span class="textoResaltado">mallas deformables</span>. Para ello se han creado varios nodos o <span class="textoResaltado">partículas unidas por muelles</span>. Variando las propiedades de estos muelles (constente elástica y amortiguación) se pueden obtener comportamiendo diferentes para conseguir simulaciones de diferentes materiales. <br />	
                         Con ello, hemos simulado algunos ejemplos como banderas y cortinas añadiendole fuerzas de viento, colchonetas elásticas, planchas de metal...<br />	
                     </div>	
@@ -65,7 +92,7 @@
             <!-- Fila 1 -->	
             <div class="row rowOscuro pt-5 pb-2">	
                 <div class="col-lg-8">	
-                    <div class="textoMediano ml-4 mr-4 pb-4">	
+                    <div class="textoMediano ml-2 mr-2 pb-2">	
                         Además, también se han implementado <span class="textoResaltado">roturas en la malla</span> para darle un mayor realismo. Para ello, se puede especificar una <span class="textoResaltado">fuerza</span> o <span class="textoResaltado">longitud máxima</span> que puede soportar cada uno de los muelles. Cuando un muelle supera su límite de rotura deja de hacer efecto produciendo una rotura con muy buenos resultados.<br />	
                     </div>	
                 </div>	
@@ -79,7 +106,7 @@
              <!-- Fila 2 -->	
             <div class="row rowOscuro pt-5 pb-5 pb-2">	
                 <div class="col-lg-8">	
-                    <div class="textoMediano ml-4 mr-4 pb-4">	
+                    <div class="textoMediano ml-2 mr-2 pb-2">	
                         También se ha probado estructuras de una dimensión, utiles para otro tipo de simulaciones como puede ser <span class="textoResaltado">pelo</span> o cuerdas.	
                     </div>	
                 </div>	

@@ -1,5 +1,25 @@
-// Tags color: blue, lightBlue, green, violet, pink, red, orange, yellow. 
+// Tags color: gray, blue, lightBlue, green, violet, pink, red, orange, yellow. 
 let proyectos = [
+    {
+    "projectName": "Simulación de fluidos mediante SPH",
+    "active": true,
+    "briefDescription": "Fluidos Smoothed Particle Hydrodynamics con diferentes viscosidades. A partir de un paper de Muller de 2003.",
+    "tags": ["C++", "Python", "Universidad"],
+    "tagsColor": ["blue", "yellow", "blue"],
+    "date": "11/2020",
+    "siteSource": "proyectos/proyectoSPH.html",
+    "imgSource": "media/images/sph_2020.webm"
+    },
+    {
+    "projectName": "Simulación de objetos deformables",
+    "active": true,
+    "briefDescription": "Implementación de estructuras 1D, 2D y 3D para la simulación de diferentes materiales.",
+    "tags": ["Processing", "Universidad"],
+    "tagsColor": ["violet", "blue"],
+    "date": "12/2020",
+    "siteSource": "proyectos/proyectoObjetosDeformables.html",
+    "imgSource": "media/images/proyectoMallasDeformables.webm"
+    },
     {
     "projectName": "Inteligencia artificial para Boids",
     "active": true,
@@ -29,16 +49,6 @@ let proyectos = [
     "date": "11/2019",
     "siteSource": "proyectos/proyectoAnimacion.html",
     "imgSource": "media/images/proyectoAnimacion.jpg"
-    },
-    {
-    "projectName": "Simulación de mallas deformables",
-    "active": true,
-    "briefDescription": "Implementación de estructuras 2D y 1D para la simulación de diferentes materiales.",
-    "tags": ["Processing", "Universidad"],
-    "tagsColor": ["violet", "blue"],
-    "date": "04/2020",
-    "siteSource": "proyectos/proyectoMallasDeformables.html",
-    "imgSource": "media/images/proyectoMallasDeformables.webm"
     },
     {
     "projectName": "Sistema Solar interactivo",

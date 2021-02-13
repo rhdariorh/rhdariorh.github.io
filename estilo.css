@@ -121,6 +121,10 @@ button:focus {
     /*text-shadow: 5px 1px 10px #808080, 0px 5px 10px #999999, -5px 1px 10px #828282;*/
 }
 /* Tag colors */
+.gray{
+    background-color: darkgrey;
+    /*text-shadow: 5px 1px 10px #0354f7, 0px 5px 10px #0376f7, -5px 1px 10px #197882;*/
+}
 .blue{
     background-color: #0376f7;
     /*text-shadow: 5px 1px 10px #0354f7, 0px 5px 10px #0376f7, -5px 1px 10px #197882;*/
