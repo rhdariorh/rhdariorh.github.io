@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add-on generación nubes en Blender | Darío</title>
+    <meta name="description" content="Implementación de una estructura básica que abstrae el uso de OpenGL Core-Profile para su uso más sencillo.">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    
+    <link rel="StyleSheet" href="../estilo.css" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/692505fe91.js" crossorigin="anonymous"></script>
+    <script src="../js/includeHTMLfile.js"></script>
+    <script src="../js/show-on-scroll.js"></script> 
+    <script src="../js/nuestros-js.js"></script> 
+</head>
+    
+<body>
+	<div class="barraNavegacion" w3-include-html="../header.html"></div> 
+    
+    <div class="bloque">
+        <div class="subbloque container-fluid firstElement">
+            <div class="row">
+                <div class="col-sm col-centered tituloPagina">
+                    <h1>Add-on de Blender para generación de nubes procedurales</h1>
+                </div>
+            </div>
+            <div class="row mb-2">
+                <div class="col-sm col-centered">
+                    <div class="d-flex justify-content-center flex-wrap">
+                        <div class="tag yellow">
+                            <span>Python</span>
+                        </div>
+                        <div class="tag orange">
+                            <span>Blender</span>
+                        </div>
+                        <div class="tag blue">
+                            <span>TFG</span>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <div class="row">
+                <div class="col-sm col-centered">
+                    <div class="d-flex justify-content-center flex-wrap">
+                        <div class="tag red">
+                            <span>En desarrollo actualmente...</span>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+
+        <div class="subbloqueFill container-fluid mt-5">
+            <div class="row rowOscuro pt-5 pb-5">
+                <div class="col-lg-8 mb-5 mt-5">
+                    <div class="row rowOscuro">
+                        <div class="textoMediano ml-4 mr-4">
+                            Desarrollo de un <span class="textoResaltado"><i>add-on</i></span> o herramienta que extiende las funcionalidades del <i>software</i> de 3D de código abierto <span class="textoResaltado">Blender</span> permitiendo la generación de objetos volumétricos con apariencia de <span class="textoResaltado">nubes atmosféricas</span>.
+                            <br /><br />
+                            Esta herramienta permite añadir, de una forma directa, nubes y paisajes de nubes a la escena 3D. El usuario puede modificar diferentes propiedades de las nubes para personalizar su apariencia según las exigencias artísticas. El desarrollo se enfoca en la simplicidad y en la capacidad de uso por usuarios con conocimiento no necesariamente muy extensos del <i>software</i> 3D Blender.
+                            <br /><br />
+                            Para lograr este objetivo se ha diseñado un <span class="textoResaltado">modelo de generación de nubes parametrizable</span> y estructurado en módulos. Cada módulo se encarga de una parte específica del modelo, como la aplicación de diferentes efectos o la generación de formas base sobre la que aplicar dichos efectos. El conjunto de módulos conforman un modelo fácilmente parametrizable, modificable y extensible. Este modelo se ha diseñado teniendo en mente las herramientas que proporciona Blender. Sin embargo, el modelo es fácilmente trasladable y puede implementarse en otros programas de 3D generalistas.
+                            <br />
+                            Por otro lado, se crea un <i>add-on</i> haciendo uso de la <span class="textoResaltado">API de Blender de Python</span> el cual implementa el modelo diseñado y una interfaz de usuario. A través de esta interfaz se pueden añadir y modificar nubes a la escena de una manera sencilla y directa abstrayendose de los detalles del modelo.
+                        </div>
+                    </div>
+                    <div class="row rowOscuro mt-3">
+                        <div class="col-lg-12 d-flex justify-content-center align-items-center">
+                            Proyecto en fase final. Próximamente se publicará el repositorio del proyecto y la información sobre el modelo diseñado. Para acceder a más información sobre el proyecto contactar conmigo en rhdariorh@gmail.com .
+                            <!---
+                            <a href="https://github.com/rhdariorh/LearningModernOpenGL" target="_blank"><button type="button" class="btn btn-primary">Ir al repositorio del proyecto</button></a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-5">
+                    <img src="../media/images/addon_nubes/nube_1.jpg" class="rounded mx-auto img-fluid d-block mt-1" style="max-height: 400px;" alt="Ejemplo de renderizado de una nube generado con el add-on.">
+                </div>
+            </div>
+        </div>
+
+        <div w3-include-html="../footer.html" class="subbloque footerContenedor"></div>    
+    </div>
+    
+
+    
+    
+    <script>
+	includeHTML();
+	</script> 
+</body>
+</html>

@@ -1,11 +1,41 @@
 // Tags color: gray, blue, lightBlue, green, violet, pink, red, orange, yellow. 
 let proyectos = [
     {
+    "projectName": "Add-on de Blender para generación de nubes procedurales",
+    "active": true,
+    "briefDescription": "",
+    "tags": ["Python", "Blender", "TFG"],
+    "tagsColor": ["yellow", "orange", "blue"],
+    "date": "5/2021",
+    "siteSource": "proyectos/proyectoAddonNubesBlender.html",
+    "imgSource": "media/images/cloud_generator_tfg.jpg"
+    },
+    {
+    "projectName": "Programación sobre tarjetas gráficas con OpenGL y GLSL",
+    "active": true,
+    "briefDescription": "Diferentes proyectos haciendo uso de modern OpenGL y programación con GLSL de shaders con de vértice, teselación, geometria, fragmento y shaders de cómputo de propósito general.",
+    "tags": ["OpenGL", "GLSL", "C++", "Universidad"],
+    "tagsColor": ["lightBlue", "orange", "blue", "blue"],
+    "date": "5/2021",
+    "siteSource": "proyectos/proyectoTarjetasGraficas.html",
+    "imgSource": "media/images/tarjetas_graficas.jpg"
+    },
+    {
+    "projectName": "Indentificación de caras con aprendizaje máquina",
+    "active": true,
+    "briefDescription": "Haciendo uso de la librería de aprendizaje máquina Scikit-learn, discriminar una cara sobre el resto de caras.",
+    "tags": ["Scikit-learn", "Python", "Universidad"],
+    "tagsColor": ["lightBlue", "yellow", "blue"],
+    "date": "5/2021",
+    "siteSource": "proyectos/proyectoMachineLearning.html",
+    "imgSource": "media/images/machine_learning_2021.jpg"
+    },
+    {
     "projectName": "Simulación de fluidos mediante SPH",
     "active": true,
     "briefDescription": "Fluidos Smoothed Particle Hydrodynamics con diferentes viscosidades. A partir de un paper de Muller de 2003.",
-    "tags": ["C++", "Python", "Universidad"],
-    "tagsColor": ["blue", "yellow", "blue"],
+    "tags": ["C++", "Python", "Blender", "Universidad"],
+    "tagsColor": ["blue", "yellow", "orange" ,"blue"],
     "date": "11/2020",
     "siteSource": "proyectos/proyectoSPH.html",
     "imgSource": "media/images/sph_2020.webm"

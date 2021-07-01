@@ -1,0 +1,248 @@
+<!DOCTYPE html>	
+<html>	
+<head>	
+    <title>Tarjetas gráficas | Darío</title>	
+    <meta name="description" content="Diferentes proyectos haciendo uso de modern OpenGL y programación con GLSL de shaders con de vértice, teselación, geometria, fragmento y shaders de cómputo de propósito general.">	
+    <meta charset="utf-8">	
+    <meta name="viewport" content="width=device-width, initial-scale=1">	
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">	
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">	
+
+    <link rel="StyleSheet" href="../estilo.css" type="text/css">	
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">	
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>	
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap" rel="stylesheet">	
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>	
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>	
+    <script src="https://kit.fontawesome.com/692505fe91.js" crossorigin="anonymous"></script>	
+    <script src="../js/includeHTMLfile.js"></script>	
+    <script src="../js/show-on-scroll.js"></script> 	
+    <script src="../js/nuestros-js.js"></script> 	
+</head>	
+
+<body>	
+	<div class="barraNavegacion" w3-include-html="../header.html"></div>	
+
+    <div class="bloque">	
+        <div class="subbloque container-fluid firstElement">	
+            <div class="row">	
+                <div class="col-sm col-centered tituloPagina">	
+                    <h1>Programación sobre tarjetas gráficas con OpenGL y GLSL</h1>	
+                </div>	
+            </div>	
+            <div class="row">	
+                <div class="col-sm col-centered">	
+                    <div class="d-flex justify-content-center flex-wrap">	
+                        <div class="tag lightBlue">	
+                            <span>OpenGL</span>	
+                        </div>
+                        <div class="tag orange">	
+                            <span>GLSL</span>	
+                        </div>
+                        <div class="tag blue">	
+                            <span>C++</span>	
+                        </div>
+                        <div class="tag blue">	
+                            <span>Universidad</span>	
+                        </div>	
+                    </div>	
+                </div>	
+            </div> 	
+        </div>	
+
+        <div class="subbloqueFill container-fluid mt-5">	
+            
+             <!-- Fila 0 -->	
+            <div class="row rowSubtitle pt-5">
+                <div class="col-lg-12">
+                    <h1>Deferred rendering</h1>
+                </div>
+            </div>
+            <div class="row rowOscuro pt-2 pb-2">	
+                <div class="col-lg-8 mb-5">	
+                    <div class="textoMediano ml-2 mr-2 pb-2">	
+                        Implementación de la técnica de renderizado de <i>deferred rendering</i> o renderizado diferido. Esta técnica es útil en los casos en los que en una escena se encuentran <span class="textoResaltado">muchos objetos los cuales se tapan unos a otros</span>. Además, su utilidad se ve intensificada en el caso de una escena con una <span class="textoResaltado">gran cantidad de luces</span> pues, gracias a esta técnica, el número de operaciones de <span class="textoResaltado">cálculo</span> de iluminación <span class="textoResaltado">se reduce</span> considerablemente. En este proyecto se comparan las dos técnicas de <i>forward rendering</i> y <i>deferred rendering</i> ante diferentes situaciones.<br /> <br />
+                        
+                        <h2>¿Cómo funciona?</h2>
+                        
+                        El renderizado estandar, el llamado <i>forward rendering</i>, ejecuta un shader de fragmento por cada fragmento resultante de cada objeto de la escena. Esto quiere decir que, si varios objetos se superponen unos encima de otros, los fragmentos que pertenecen a partes de objetos ocultas se calcularán y posteriormente serán descartados pues solo se dibujará el fragmento del objeto más cercano. Si hay muchos objetos y muchas luces se ha de calcular la iluminación de muchos fragmentos que finalmente no se verán conllevando una gran pérdida de cómputo. Para ello se utiliza la metodología de <i>deferred rendering</i>.
+                        <br /> <br />
+                        Para mitigar este problema el <span class="textoResaltado">renderizado diferido divide el renderizado en dos pasos</span>. Uno el llamado <span class="textoResaltado"><i>geometry pass</i></span> en el que se crean texturas con la información de la posición, color, normal y cualquier información relevante para el sombreado. En estas texturas únicamente está la información del fragmento final. Por lo tanto, en una segunda fase del renderizado, el <span class="textoResaltado"><i>lighting pass</i></span> en el que se calcula la imagen final y la ilumiación, no es necesario calcular la iluminación para cada objeto sino que únicamente una vez por cada fragmento final haciendo uso de la información de las texturas. Para más información sobre esta técnica visitar <a href="https://learnopengl.com/Advanced-Lighting/Deferred-Shading" target="_blank">Learn OpenGL</a>.
+
+                    </div>	
+                </div>	
+                <div class="col-lg-4">
+                    <img src="../media/images/tarjetasGraficas/deferred.jpg" class="rounded mx-auto img-fluid d-block mt-1" style="max-height: 400px;" alt="Imagen con muchos objetos y luces renderizada con deferred shading.">
+                </div>
+            </div>	
+            
+            <!-- Fila X -->	
+            <div class="row rowSubtitle pt-5">
+                <div class="col-lg-12">
+                    <h1>Shader de cómputo</h1>
+                </div>
+            </div>
+            <div class="row rowOscuro pt-2 pb-2">	
+                <div class="col-lg-3">
+                    <img src="../media/images/tarjetasGraficas/computo.jpg" class="rounded mx-auto img-fluid d-block mt-1" style="max-height: 400px;" alt="Visualización de partículas.">
+                </div>
+                <div class="col-lg-9 mb-5">	
+                    <div class="textoMediano ml-2 mr-2 pb-2">	
+                        Implementación de un shader de cómputo en coordinación con OpenGL que permite <span class="textoResaltado">paralelizar el cálculo de simulaciones de partículas</span>. Se tiene en cuenta el tamaño del grupo en relación al número de partículas para así conseguir un cómputo eficiente.
+                    <br /> <br />
+                    </div>	
+                </div>	
+            </div>	
+            
+            <!-- Fila X -->	
+            <div class="row rowSubtitle pt-5">
+                <div class="col-lg-12">
+                    <h1>Shaders de teselsación y geometria</h1>
+                </div>
+            </div>
+            <div class="row rowOscuro pt-2 pb-2">	
+                <div class="col-lg-8 mb-5">	
+                    <div class="textoMediano ml-2 mr-2 pb-2">	
+                        Utilización de <span class="textoResaltado">shaders de teselación</span> para modificar la geometría de diferentes partes de un objeto esférico. Se disminuye el número de vértices en las zonas mas alejadas y aumentan en las zonas más cercanas para lograr detalle con un número menor de vértices en la escena. Se tiene control sobre los límites de zonas con diferente densidad de vértices para evitar discontinuidades entre mallas.
+                        <br /><br />
+                        El <span class="textoResaltado">shader de geometría</span> transforma la posición de cada vertice y además cambia el tipo de primitiva de dibujado a <i>quads</i>. Por cada vértice se crea un <i>quad</i> con una textura aplicada que simula una esfera, técnica conocida como técnica del impostor. Además, la posición de cada <i>quad</i> se traslada con el tiempo simulado un explosión simple.
+                    <br /> <br />
+                    </div>	
+                </div>	
+                <div class="col-lg-4">
+                    <img src="../media/images/tarjetasGraficas/teselacion_geometria.jpg" class="rounded mx-auto img-fluid d-block mt-1" style="max-height: 400px;" alt="Visualización aplicando el shader de geometría y de teselación.">
+                </div>
+            </div>	
+            
+            <!-- Fila X -->	
+            <div class="row rowSubtitle pt-5">
+                <div class="col-lg-12">
+                    <h1>Mapas de sombras</h1>
+                </div>
+            </div>
+            <div class="row rowOscuro pt-2 pb-2">	
+                <div class="col-lg-8 mb-5">	
+                    <div class="textoMediano ml-2 mr-2 pb-2">	
+                        La metodología usada consiste en obtener una <span class="textoResaltado">textura</span> con la información <span class="textoResaltado">de profundidad</span> renderizando la escena desde la posición de la luz. Posteriormente, dicha textura se utiliza a la hora de renderizar la imagen final desde la posición de la cámara para determinar si un fragmento se encuentra en zona de sombra o zona de luz. Para ello, se ha de transformar las coordenads de los fragmentos final al sistema de coordenadas de la luz para poder saber qué texel de la textura de profundidad le corresponde.
+                    <br /> <br />
+                    </div>	
+                </div>	
+                <div class="col-lg-4">
+                    <img src="../media/images/tarjetasGraficas/mapa_de_sombras.jpg" class="rounded mx-auto img-fluid d-block mt-1" style="max-height: 400px;" alt="Comparación mapas de sombras con filtros.">
+                </div>
+            </div>	
+            
+            <!-- Fila X -->	
+            <div class="row rowSubtitle pt-5">
+                <div class="col-lg-12">
+                    <h1>Iluminación de hemisferio, iluminación basada en imágenes e iluminación basada en armónicos esféricos</h1>
+                </div>
+            </div>
+            <div class="row rowOscuro pt-2 pb-2">	
+                <div class="col-lg-8 mb-5">	
+                    <div class="textoMediano ml-2 mr-2 pb-2">	
+                        Diferentes métodos de iluminación. La <span class="textoResaltado">iluminación por hemisferio</span> crea una iluminación ambiente no uniforme suponiendo que la iluminación proveniente de la parte superior es más luminosa que la proveniente de la zona inferior. La <span class="textoResaltado">iluminación basada en imágenes</span> se basa en el cálculo de la iluminación de los objetos a partir de un mapa de entorno que actúa como luz de la escena. La <span class="textoResaltado">iluminación con armónicos esféricos</span> pretende obtener los mismos resultados que con la basada en imágenes pero con una aproximación procedural en la que se simplifica la imagen haciendo uso de armónicos esféricos prescindiendo de información inecesaria de la imagen.
+                    <br /> <br />
+                    </div>	
+                </div>	
+                <div class="col-lg-4">
+                    <img src="../media/images/tarjetasGraficas/tecnicas_iluminacion.jpg" class="rounded mx-auto img-fluid d-block mt-1" style="max-height: 400px;" alt="Comparación distintas técnicas de iluminación.">
+                </div>
+            </div>	
+            
+            <!-- Fila X -->	
+            <div class="row rowSubtitle pt-5">
+                <div class="col-lg-12">
+                    <h1>Mapeado de normales, de paralaje y de brillos</h1>
+                </div>
+            </div>
+            <div class="row rowOscuro pt-2 pb-2">	
+                <div class="col-lg-4">
+                    <img src="../media/images/tarjetasGraficas/bump.jpg" class="rounded mx-auto img-fluid d-block mt-1" style="max-height: 400px;" alt="Imagenes de comparación de diferentes técnicas de mapeado de normales y paralaje.">
+                </div>
+                <div class="col-lg-8 mb-5">	
+                    <div class="textoMediano ml-2 mr-2 pb-2">	
+                    Implementación de mapas de color, mapas de brillo que determinan la componente especular de la luz en cada punto y mapa de normales simple, con paralaje simple y con paralaje iterativo.<br /> <br />
+                    </div>	
+                </div>	
+            </div>	
+            
+            <!-- Fila x -->	
+            <div class="row rowSubtitle pt-5">
+                <div class="col-lg-12">
+                    <h1>Texturas, reflejos y refracción</h1>
+                </div>
+            </div>
+            <div class="row rowOscuro pt-2 pb-2">
+                <div class="col-lg-4">
+                    <video autoplay loop muted playsinline src="../media/images/tarjetasGraficas/reflejos.webm" class="rounded mx-auto img-fluid d-block" style="max-height: 400px;" alt="Ejemplo de renderizado de reflejos y refracción.">
+                    </video>
+                </div>
+                <div class="col-lg-8 mb-5">	
+                    <div class="textoMediano ml-2 mr-2 pb-2">	
+                        Aplicar texturas a objetos, objetos con reflejos a partir de mapas de entorno creando efecto de objetos metálicos, objetos con apariencia de cristas mediante refracción utilizando refracción con índice duplicado (y doble refracción para el caso de la esfera), las ecuaciones de Fresnel y la dispersión cromática de la luz.
+                    </div>	
+                </div>	
+            </div>
+            
+            <!-- Fila X -->	
+            <div class="row rowSubtitle pt-5">
+                <div class="col-lg-12">
+                    <h1>Formas de calcular la ilumunación</h1>
+                </div>
+            </div>
+            <div class="row rowOscuro pt-2 pb-2">
+                <div class="col-lg-4">
+                    <img src="../media/images/tarjetasGraficas/iluminacion_tipos.jpg" class="rounded mx-auto img-fluid d-block mt-1" style="max-height: 400px;" alt="Imágenes ejemplo de las técnicas básicas de iluminación.">
+                </div>
+                <div class="col-lg-8 mb-5">	
+                    <div class="textoMediano ml-2 mr-2 pb-2">	
+                        Implementación de diferentes metodologías para el cálculo de la iluminación. Iluminación por vértice o por pixel usando una luz puntual o una luz focal.<br /> <br />
+
+                    </div>	
+                </div>	
+            </div>	
+            
+            <!-- Fila x -->	
+            <div class="row rowSubtitle pt-5">
+                <div class="col-lg-12">
+                    <h1>Jugando con los shaders de vértice y fragmento</h1>
+                </div>
+            </div>
+            <div class="row rowOscuro pt-2 pb-2">	
+                <div class="col-lg-8 mb-5">	
+                    <div class="textoMediano ml-2 mr-2 pb-2">	
+                        Jugando modificando la posición de los vértices y descartando fragmentos en el shader de fragmento.
+                    </div>	
+                </div>	
+                <div class="col-lg-4">
+                    <video autoplay loop muted playsinline src="../media/images/tarjetasGraficas/vertices_y_fragmentos.webm" class="rounded mx-auto img-fluid d-block" style="max-height: 275px;" alt="Ejemplos de pruebas con shaders de vértice y fragmento.">
+                    </video>
+                </div>
+            </div>
+            
+            <!-- Fila x -->	
+            <div class="row rowSubtitle pt-5">
+                <div class="col-lg-12">
+                    <h1>Comparando modo retenido e inmediato de OpenGL</h1>
+                </div>
+            </div>
+            <div class="row rowOscuro pt-2 pb-2">
+                <div class="col-lg-12 mb-5">
+                    <div class="textoMediano ml-2 mr-2 pb-2">
+                        Se ha probado e implementado una misma escena usando las dos metodologias y se han comprado. El modo retenido es más sencillo y abstracto pero mucho menos eficiente que el modelo inmediato con el cual tienes mayor control a bajo nivel de la tubería gráfica.
+                    </div>
+                </div>	
+            </div>	
+
+        </div>	
+
+        <div w3-include-html="../footer.html" class="subbloque footerContenedor"></div>	
+    </div>	
+
+    <script>	
+	includeHTML();	
+	</script> 	
+</body>	
+</html>
