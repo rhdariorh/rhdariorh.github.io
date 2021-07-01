@@ -3,7 +3,7 @@ let proyectos = [
     {
     "projectName": "Add-on de Blender para generación de nubes procedurales",
     "active": true,
-    "briefDescription": "",
+    "briefDescription": "Diseño de un modelo de generación de nubes volumetricas e implementación de este junto a un add-on de Blender para su manejo sencillo por el usuario.",
     "tags": ["Python", "Blender", "TFG"],
     "tagsColor": ["yellow", "orange", "blue"],
     "date": "5/2021",
