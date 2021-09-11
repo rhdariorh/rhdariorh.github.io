@@ -1,9 +1,9 @@
 /***********/
 /* General */
 /***********/
-@font-face { 
-    font-family: "OpenSans"; 
-    src: url(media/fonts/OpenSans-Regular.ttf); 
+@font-face {
+    font-family: "OpenSans";
+    src: url(media/fonts/OpenSans-Regular.ttf);
     font-style: normal;
     font-weight: bold;
 }
@@ -12,14 +12,14 @@ html, body{
     font-family: "Montserrat" !important;
     color: #000000 !important;
     width: 100%;
-    height: 100%;
+    min-height: 100%;
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
 }
 
 ::selection {
-    background-color: #e6fade;
+    background-color: #77d14a40;
 }
 
 a{
@@ -117,7 +117,7 @@ button:focus {
     padding-left: 0.6em;
     padding-right: 0.6em;
     margin-bottom: 0.5em;
-    
+
     /*text-shadow: 5px 1px 10px #808080, 0px 5px 10px #999999, -5px 1px 10px #828282;*/
 }
 /* Tag colors */
@@ -166,7 +166,7 @@ button:focus {
 }
 
 .footer{
-    background-color: #f5faf3;
+    /*background-color: #f5faf3;*/
     color: #41596b;
 }
 
@@ -188,7 +188,7 @@ button:focus {
 
 .firstElementColored{
     padding-top: 130px;
-    
+
         /*background: linear-gradient(180deg, rgba(255,255,255,.0), rgba(255,255,255,1) 98.0%),linear-gradient(210deg, rgb(119 209 74 / 70%), rgba(255,255,255,0.0) 90.00%),linear-gradient(90deg, rgb(76 103 202 / 83%), rgba(255,255,255,0.0) 90.00%);*/
 }
 
@@ -303,7 +303,7 @@ button:focus {
 
 .contenedor1Above{
     z-index: 1;
-    opacity: 0; 
+    opacity: 0;
     position: relative;
     width: 100%;
     padding: 1em;
@@ -329,18 +329,18 @@ button:focus {
 }
 
 .contenedor1:hover .contenedor1Above{
-    opacity: 1; 
+    opacity: 1;
     transition: 0.3s;
 }
 
 @media screen and (max-width:500px){
 .contenedor1:hover .contenedor1Above{
-    opacity: 0; 
+    opacity: 0;
     transition: 0.3s;
 }
 }
 
-.contenedor1Under{ 
+.contenedor1Under{
     z-index: 0;
     opacity: 1;
     position: absolute;
@@ -348,7 +348,7 @@ button:focus {
     height: 100%;
 }
 
-.contenedor1Under img{ 
+.contenedor1Under img{
     float:left;
     width:100%;
     height:100%;
@@ -361,13 +361,13 @@ button:focus {
     transition: 0.3s;*/
 }
 
-.contenedor1:hover .contenedor1Under img{ 
+.contenedor1:hover .contenedor1Under img{
     opacity: 0.1;
     transition: 0.3s;
 }
 
 @media screen and (max-width:500px){
-.contenedor1:hover .contenedor1Under img{ 
+.contenedor1:hover .contenedor1Under img{
     opacity: 1;
     transition: 0.3s;
 }
@@ -450,7 +450,7 @@ button:focus {
 
 .contenedor3{
     background-color: #ffffff;
-    
+
     /*padding: 1em;*/
     overflow: hidden;
     border-radius: .3em;
@@ -469,7 +469,7 @@ button:focus {
 .contenedor3:hover{
     transform: translate(0px, -0.3em);
     box-shadow: 0 0 15px #bbbbbb;
-    
+
     background-image: linear-gradient(#ffffff, #ffffff);
     background-blend-mode:multiply;
     transition: 0.3s !important;
@@ -557,17 +557,17 @@ button:focus {
 
 .contenedor3InfoBottom{
     bottom: 10px;
-    left: 0; 
-    right: 0; 
-    margin-left: auto; 
-    margin-right: auto; 
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /********************/
 /* Barra navegación */
 /********************/
 .barraNavegacion{
-    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.95) 100%);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.7) 100%);
     z-index: 2;
     position: fixed;
     width: 100%;
@@ -699,9 +699,9 @@ button:focus {
 
 
 @media screen and (max-width:1000px){
-    
+
 .tituloIndex h1{
- 
+
     font-size: 55px;
 }
 .tituloIndex p{
@@ -797,7 +797,7 @@ video{
     -webkit-appearance: none;
     width: 70%;
     height: 2px;
-    border-radius: 5px;  
+    border-radius: 5px;
     background: #d3d3d3;
     outline: none;
     opacity: 0.7;
@@ -810,7 +810,7 @@ video{
   appearance: none;
   width: 15px;
   height: 15px;
-  border-radius: 50%; 
+  border-radius: 50%;
   background: #7c82ff;
   cursor: pointer;
     border: none;
@@ -833,7 +833,7 @@ video{
 .contenedorAudio {
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
     margin-top: 2em;
     width: 100%;
 }
@@ -884,19 +884,19 @@ video{
 
 #map{
     box-shadow: 0 0 5px #bbbbbb;
-    height: 30em; 
+    height: 30em;
     width: 90%;
 }
 
 .form-control:focus{
-    border-color: #1f8884  !important;  
-    box-shadow: 0 0 5px #1f8884  !important; 
-} 
+    border-color: #1f8884  !important;
+    box-shadow: 0 0 5px #1f8884  !important;
+}
 
 .custom-select:focus{
-    border-color: #1f8884  !important;  
-    box-shadow: 0 0 5px #1f8884  !important; 
-} 
+    border-color: #1f8884  !important;
+    box-shadow: 0 0 5px #1f8884  !important;
+}
 
 .btnEnviar {
     color: #fff !important;
