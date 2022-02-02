@@ -1,5 +1,15 @@
 // Tags color: gray, blue, lightBlue, green, violet, pink, red, orange, yellow. 
 let proyectos = [
+{
+    "projectName": "Reel de composición (postproducción)",
+    "active": true,
+    "briefDescription": "Reel de composición hecho con Nuke durante el master de VFX y Composición en Animum Creatity Advanced School.",
+    "tags": ["Nuke", "Estudios de Máster"],
+    "tagsColor": ["orange", "blue"],
+    "date": "1/2022",
+    "siteSource": "proyectos/reelCompoAnimum.html",
+    "imgSource": "media/images/reelCompo.jpg"
+    },
     {
     "projectName": "Add-on de Blender para generación de nubes procedurales",
     "active": true,
