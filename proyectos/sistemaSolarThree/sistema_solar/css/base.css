@@ -1,0 +1,61 @@
+body 
+{
+	font-family: Arial;
+	background-color: #ccccff;
+	margin: 0px;
+	overflow: hidden;
+}
+
+#ui{
+	position: absolute; 
+	top: 5px; 
+	left: 10px; 
+	z-index: 1;
+}
+
+#informacion {
+	text-align: center;
+	background-color:rgba(0,0,0,0.3);
+	color: #ffffff;
+	padding: 5%;
+	width:300px; 
+	display:none;
+	margin-top: 1em;
+	border-style: solid;
+	border-color: white;
+	border-width: 1.5px;
+	border-radius: 0.2em;
+}
+
+#informacion p{
+	text-align: justify;
+}
+#informacion h2{
+	text-align: justify;
+}
+
+
+#controles {
+	width:300px; 
+	text-align: center;
+}
+
+input{
+	font-size: 15px;
+	background-color: rgba(0, 0, 0, 0.1);
+	color: white;
+	border-style: solid;
+	border-color: white;
+	border-width: 1.5px;
+	border-radius: 0.2em;
+	padding: 0.2em;
+	margin: 0.2em;
+	transition: 0.2s;
+	min-width: 80px;
+}
+
+input:hover{
+	background-color: white;
+	color: black;
+	transition: 0.2s;
+}

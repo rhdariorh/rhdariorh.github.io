@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Solar System</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel=stylesheet href="css/base.css"/>
+</head>
+<body>
+
+<script src="js/three.js"></script>
+<script src="js/Detector.js"></script>
+<script src="js/THREEx.KeyboardState.js"></script>
+<script src="js/THREEx.FullScreen.js"></script>
+<script src="js/THREEx.WindowResize.js"></script>
+<script src="js/AdditiveBlendShader.js"></script>
+<script src="js/tween.umd.js"></script>
+
+<!-- Shaders para bloom
+	Fuente: https://threejs.org/examples/webgl_postprocessing_unreal_bloom_selective
+-->
+<script type="x-shader/x-vertex" id="vertexshader">
+
+	varying vec2 vUv;
+
+	void main() {
+
+		vUv = uv;
+
+		gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );
+
+	}
+
+</script>
+<script type="x-shader/x-fragment" id="fragmentshader">
+
+	uniform sampler2D baseTexture;
+	uniform sampler2D bloomTexture;
+
+	varying vec2 vUv;
+
+	vec4 getTexture( sampler2D texelToLinearTexture ) {
+
+		return mapTexelToLinear( texture2D( texelToLinearTexture , vUv ) );
+
+	}
+
+	void main() {
+
+		gl_FragColor = ( getTexture( baseTexture ) + vec4( 1.0 ) * getTexture( bloomTexture ) );
+
+	}
+
+</script>
+
+
+<script type="module" src="sistemaSolar.js"></script>
+
+<!-- jQuery code to display an information button and box when clicked. -->
+<!--<script src="js/jquery-1.9.1.js"></script>
+<script src="js/jquery-ui.js"></script>
+<link rel=stylesheet href="css/jquery-ui.css" />
+<link rel=stylesheet href="css/info.css"/>
+<script src="js/info.js"></script>-->
+
+<!-- ------------------------------------------------------------ -->
+
+<div id="ThreeJS" style="z-index: 0; position: absolute; left:0px; top:0px"></div>
+
+
+<div id="ui">
+	<div id="controles">
+		<input type="button" id="solarsystem" onclick="activatePlanet(this);" value="Sistema"/> 
+		<input type="button" id="sun" onclick="activatePlanet(this);" value="Sol"/>
+		<input type="button" id="mercury" onclick="activatePlanet(this);" value="Mercurio"/>
+		<input type="button" id="venus" onclick="activatePlanet(this);" value="Venus"/>
+		<input type="button" id="earth" onclick="activatePlanet(this);" value="Tierra"/>
+		<input type="button" id="mars" onclick="activatePlanet(this);" value="Marte"/>
+		<input type="button" id="jupiter" onclick="activatePlanet(this);" value="Jupiter"/>
+		<input type="button" id="saturn" onclick="activatePlanet(this);" value="Saturno"/>
+		<input type="button" id="uranus" onclick="activatePlanet(this);" value="Urano"/>
+		<input type="button" id="neptune" onclick="activatePlanet(this);" value="Neptuno"/> 
+		<input type="button" id="pluto" onclick="activatePlanet(this);" value="Plutón"/>
+	</div>
+	
+	<div id="informacion">
+		<div  id="solarsystemInfo" style="display: none;">
+			<h1>Sistema Solar:</h1><br /> 
+			<h2>Información</h2>
+			<p> El sistema solar, al que pertenece el planeta que habitamos, 
+				forma parte de un enorme sistema estelar: la galaxia de la <b>Vía Láctea</b>, 
+				formada por 100.000 millones de estrellas. 
+				Nuestra galaxia no es inmóvil; 
+				por el contrario gira en torno de sí misma a una fantástica velocidad que, 
+				en los puntos más apartados alcanza 1.500.000 km/h. 
+				Pese a esta increíble velocidad, necesita 200 millones de años para
+				completar un giro sobre sí misma. Este período es el <b>año galáctico</b>. 
+			</p>
+			<input type="button" id="ocultar" onclick="ocultarInfo();" value="Ocultar información"/>
+		</div> 
+		
+		<div  id="sunInfo" style="display: none;"> 
+			<h1>Sol:</h1>
+			<p> El Sol es la <b>estrella</b> más cercana a la Tierra,
+				y es el centro de nuestro Sistema Solar. El Sol,
+				una gigante bola giratoria de gas muy caliente,
+				es energizado por reacciones de fusión nuclear.
+				La luz del Sol calienta nuestro planeta y <b>hace posible la vida</b>.
+			</p>
+			<input type="button" id="ocultar" onclick="ocultarInfo();" value="Ocultar información"/>
+		</div> 
+		
+		<div  id="mercuryInfo" style="display: none;"> 
+			<h1>Mercurio:</h1>
+			<h2>Perihelio:</h2><p>45'9 millones Km</p>
+			<h2>Afelio:</h2><p>69'7 millones Km</p>
+			<h2>Información</h2>
+			<p> El <b>más cercano</b> al Sol y el que se mueve a más velocidad a su alrededor:<br/> 
+				tarda solo <b>88</b> días terrestres en dar una vuelta completa.<br/> 
+				La superficie está cubierta de cráteres formados por el impacto de meteoritos.
+			</p>
+			<input type="button" id="ocultar" onclick="ocultarInfo();" value="Ocultar información"/>
+		</div> 
+		
+		<div  id="venusInfo" style="display: none;"> 
+			<h1>Venus:</h1>
+			<h2>Perihelio:</h2><p>107'4 millones Km</p>
+			<h2>Afelio:</h2><p>109 millones Km</p>
+			<h2>Información</h2>
+			<p> Su atmósfera ejerce una presión 90 veces superior a la de la Tierra a nivel del mar,
+				y sus nubes están formadas por <b>ácido sulfúrico</b>. <br/> 
+				Esas nubes reflejan la luz solar y retienen el calor,
+				por eso es el planeta más caliente y, despues del Sol y la Luna, 
+				el que más brilla visto desde la Tierra.
+			</p> 
+			<input type="button" id="ocultar" onclick="ocultarInfo();" value="Ocultar información"/>
+		</div> 
+		
+		<div  id="earthInfo" style="display: none;"> 
+			<h1>Tierra:</h1>
+			<h2>Perihelio:</h2><p>147 millones Km</p>
+			<h2>Afelio:</h2><p>152 millones Km</p> 
+			<h2>Información</h2>
+			<p> Es el único planeta que posee la temperatura necesaria
+				para mantener agua en estado líquido. <br/> 
+				Esta característica (sumada a su atmósfera, rica en oxígeno)
+				es lo que posibilitó la evolución y el mantenimiento de las diferentes <b>formas de vida</b>.
+			</p> 
+			<input type="button" id="ocultar" onclick="ocultarInfo();" value="Ocultar información"/>
+		</div> 
+		
+		<div  id="marsInfo" style="display: none;"> 
+			<h1>Marte:</h1>
+			<h2>Perihelio:</h2><p>206'7 millones Km</p>
+			<h2>Afelio:</h2><p>249'1 millones Km</p>
+			<h2>Información</h2>
+			<p> La superficie está cubierta con <b>óxido de hierro</b>, 
+				que le da un intenso color rojo. <br/> 
+				Sus temperaturas son bajísimas, y no hay casi oxígeno. <br/> 
+				Se cree que es imposible que hubiera allí formas de vida similares a las de la Tierra.
+			</p> 
+			<input type="button" id="ocultar" onclick="ocultarInfo();" value="Ocultar información"/>
+		</div> 
+		
+		<div  id="jupiterInfo" style="display: none;"> 
+			<h1>Jupiter:</h1>
+			<h2>Perihelio:</h2><p>740'9 millones Km</p>
+			<h2>Afelio:</h2><p>815'7 millones Km</p>
+			<h2>Información</h2>
+			<p> Llamado "el rey de los planetas", es el más grande de todos. <br/> 
+				Tiene un atmósfera formada por <b>hidrógeno</b> y <b>helio</b>.<br/> 
+				Su característica más apreciable es la Gran Mancha Roja, 
+				una enorme tormenta de vientos giratorios.
+			</p> 
+			<input type="button" id="ocultar" onclick="ocultarInfo();" value="Ocultar información"/>
+		</div> 
+		
+		<div  id="saturnInfo" style="display: none;"> 
+			<h1>Saturno:</h1>
+			<h2>Perihelio:</h2><p>1347 millones Km</p>
+			<h2>Afelio:</h2><p>1507 millones Km</p>
+			<h2>Información</h2> 
+			<p> Está constituido por diferentes capas de hidrógeno>
+				que rodean a un núcleo rocoso. <br/> 
+				Despúes de Júpiter, es el planeta de mayor tamaño
+				y el que tiene mayor número de satélites naturales (alrededor de 18). <br/> 
+				Sus famosos <b>anillos</b> están formados por partículas de roca y polvo, 
+				cubiertas de hielo.
+			</p>  
+			<input type="button" id="ocultar" onclick="ocultarInfo();" value="Ocultar información"/>
+		</div> 
+	
+		<div  id="uranusInfo" style="display: none;"> 
+			<h1>Urano:</h1>
+			<h2>Perihelio:</h2><p>2735 millones Km</p> 
+			<h2>Afelio:</h2><p>3004 millones Km</p>
+			<h2>Información</h2> 
+			<p> Igual que Neptuno, posee en su atmósfera gas metano,
+				que le da un tono azulado. <br/> 
+				Por estar lejos del Sol, es un planeta <b>frío</b>: <br/> 
+				la temperatura de las nubes exteriores es de -2100 C. <br/>
+				Tiene 17 satélites naturales y un sistema de anillos
+				formados por <b>fragmentos rocosos</b> que pueden alcanzar
+				hasta un metro de diámetro.
+			</p>
+			<input type="button" id="ocultar" onclick="ocultarInfo();" value="Ocultar información"/>
+		</div> 
+		
+		<div  id="neptuneInfo" style="display: none;">
+			<h1>Neptuno:</h1>
+			<h2>Perihelio:</h2><p>4456 millones Km</p> 
+			<h2>Afelio:</h2><p>4537 millones Km</p>
+			<h2>Información</h2>
+			<p> Fue observado por primera vez en 1846,
+				pero su posición se había calculado antes matemáticamente. <br/> 
+				Se lo ve verde-azulado como consecuencia del <b>gas metano</b> de su atmósfera,
+				que absorbe la luz roja y refleja la azul. <br/> 
+				La sonda Voyager 2, en 1989, descubrió sus anillos y seis de sus ocho satélites.
+			</p>  
+			<input type="button" id="ocultar" onclick="ocultarInfo();" value="Ocultar información"/>
+		</div> 
+	
+		<div  id="plutoInfo" style="display: none;"> 
+			<h1>Plutón:</h1>
+			<h2>Perihelio:</h2><p>4425 millones Km</p>
+			<h2>Afelio:</h2><p>7375 millones Km</p>
+			<h2>Información</h2>
+			<p> Desde 2007, estre astro de <b>roca</b> y <b>helio</b> se considera planeta enano pese
+				a que durante muchos años se le a clasificado como un planeta más. <br/> 
+				Tiene una sola luna: <b>Caronte</b>, cuya órbita <br/> 
+				está totalmente sincronizada con la del planeta. <br/> 
+				Esto hace que Plutón y su luna siempre enfrenten la misma cara.
+			</p> 
+			<input type="button" id="ocultar" onclick="ocultarInfo();" value="Ocultar información"/> 
+		</div> 
+	</div>
+</div>
+
+
+
+</body>
+</html>
