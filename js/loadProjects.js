@@ -10,6 +10,7 @@ let proyectos = [
     "siteSource": "proyectos/reelHoudiniAnimum.html",
     "imgSource": "media/images/reelHoudini.jpg"
     },
+	{
     "projectName": "Reel de composición (postproducción)",
     "active": true,
     "briefDescription": "Reel de composición hecho con Nuke durante el master de VFX y Composición en Animum Creatity Advanced School.",
