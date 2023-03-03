@@ -1,11 +1,20 @@
 // Tags color: gray, blue, lightBlue, green, violet, pink, red, orange, yellow. 
 let proyectos = [
 {
+	"projectName": "Reel de VFX Houdini (postproducción)",
+    "active": true,
+    "briefDescription": "Reel de VFX hecho con Houdini durante el master de VFX y Composición en Animum Creatity Advanced School.",
+    "tags": ["Houdini", "Estudios de Máster"],
+    "tagsColor": ["orange", "blue"],
+    "date": "3/2023",
+    "siteSource": "proyectos/reelHoudiniAnimum.html",
+    "imgSource": "media/images/reelHoudini.jpg"
+    },
     "projectName": "Reel de composición (postproducción)",
     "active": true,
     "briefDescription": "Reel de composición hecho con Nuke durante el master de VFX y Composición en Animum Creatity Advanced School.",
     "tags": ["Nuke", "Estudios de Máster"],
-    "tagsColor": ["orange", "blue"],
+    "tagsColor": ["yellow", "blue"],
     "date": "1/2022",
     "siteSource": "proyectos/reelCompoAnimum.html",
     "imgSource": "media/images/reelCompo.jpg"
