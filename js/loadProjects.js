@@ -1,6 +1,6 @@
 // Tags color: gray, blue, lightBlue, green, violet, pink, red, orange, yellow. 
 let proyectos = [
-{
+	{
 	"projectName": "Reel de VFX Houdini (postproducción)",
     "active": true,
     "briefDescription": "Reel de VFX hecho con Houdini durante el master de VFX y Composición en Animum Creatity Advanced School.",
